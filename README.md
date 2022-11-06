@@ -18,5 +18,5 @@ You may also see any lint errors in the console.
 ```
 cd backend
 python -m venv venv 
-pip install -r requirements.txt
+pip install -r requirements.txt (make sure venv is activated)
 ```
