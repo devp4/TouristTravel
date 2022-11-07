@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /backend/venv
+/backend/cache
 
 # testing
 /coverage
