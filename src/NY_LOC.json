@@ -1,0 +1,1418 @@
+{
+    "tourism": [
+        {
+            "name": "Empire State Building",
+            "address": "Empire State Building, 350 5th Avenue, New York, NY 10018, United States of America",
+            "coordinates": [
+                -73.98565461987332,
+                40.748428399999995
+            ],
+            "node": "42446701"
+        },
+        {
+            "name": "Bryant Park",
+            "address": "Bryant Park, New York, NY 10018, United States of America",
+            "coordinates": [
+                -73.98354279430387,
+                40.75375085
+            ],
+            "node": "42430329"
+        },
+        {
+            "name": "Madison Square Garden",
+            "address": "Madison Square Garden, 4 Pennsylvania Plaza, New York, NY 10001, United States of America",
+            "coordinates": [
+                -73.99351594545152,
+                40.750512900000004
+            ],
+            "node": "4443775465"
+        },
+        {
+            "name": "Jane's Carousel",
+            "address": "Jane's Carousel, 45 Main Street, New York, NY 11201, United States of America",
+            "coordinates": [
+                -73.99237855,
+                40.70443305
+            ],
+            "node": "42469329"
+        },
+        {
+            "name": "New York Public Library",
+            "address": "New York Public Library, 476 5th Avenue, New York, NY 10018, United States of America",
+            "coordinates": [
+                -73.9821523605632,
+                40.7533445
+            ],
+            "node": "42432436"
+        },
+        {
+            "name": "Grand Central Terminal",
+            "address": "Grand Central Terminal, 89 East 42nd Street, New York, NY 10017, United States of America",
+            "coordinates": [
+                -73.97724987363358,
+                40.752701200000004
+            ],
+            "node": "9140654137"
+        },
+        {
+            "name": "Circle Line",
+            "address": "Circle Line, West 42nd Street, New York, NY 10036, United States of America",
+            "coordinates": [
+                -74.00150775515021,
+                40.76276455
+            ],
+            "node": "42437379"
+        },
+        {
+            "name": "Ripley's Believe It or Not!",
+            "address": "Ripley's Believe It or Not!, 234 West 42nd Street, New York, NY 10036, United States of America",
+            "coordinates": [
+                -73.98850783393843,
+                40.756466
+            ],
+            "node": "42435663"
+        },
+        {
+            "name": "Rockefeller Center",
+            "address": "Rockefeller Center, 45 Rockefeller Plaza, New York, NY 10111, United States of America",
+            "coordinates": [
+                -73.97995686116377,
+                40.75925755
+            ],
+            "node": "42430356"
+        },
+        {
+            "name": "Chelsea Market",
+            "address": "Chelsea Market, 75 9th Avenue, New York, NY 10011, United States of America",
+            "coordinates": [
+                -74.0069958,
+                40.7429236
+            ],
+            "node": "42445766"
+        },
+        {
+            "name": "Van Brunt Stillhouse",
+            "address": "Van Brunt Stillhouse, 6 Bay Street, New York, NY 11231, United States of America",
+            "coordinates": [
+                -74.0101274,
+                40.673606
+            ],
+            "node": "42471890"
+        },
+        {
+            "name": "Paul Nicklen Gallery",
+            "address": "Paul Nicklen Gallery, West Broadway, New York, NY 10013, United States of America",
+            "coordinates": [
+                -74.0033029,
+                40.7226902
+            ],
+            "node": "42452026"
+        },
+        {
+            "name": "The Cloisters",
+            "address": "The Cloisters, West Terrace, New York, NY, United States of America",
+            "coordinates": [
+                -73.93171304500606,
+                40.864828599999996
+            ],
+            "node": "42434722"
+        },
+        {
+            "name": "Cathedral of Saint John the Divine",
+            "address": "Cathedral of Saint John the Divine, 1047 Amsterdam Avenue, New York, NY 10025, United States of America",
+            "coordinates": [
+                -73.96178430421567,
+                40.80376595
+            ],
+            "node": "42437222"
+        },
+        {
+            "name": "The Blockhouse",
+            "address": "The Blockhouse, Northwest Central Park Loop, New York, NY 10026, United States of America",
+            "coordinates": [
+                -73.9562876,
+                40.7986699
+            ],
+            "node": "42433743"
+        },
+        {
+            "name": "United Nations Headquarters",
+            "address": "United Nations Headquarters, 405 FDR Drive, New York, NY 10017, United States of America",
+            "coordinates": [
+                -73.96738998324597,
+                40.7496292
+            ],
+            "node": "42453000"
+        },
+        {
+            "name": "Lincoln Center for the Performing Arts",
+            "address": "Lincoln Center for the Performing Arts, 10 Amsterdam Avenue, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.98422365967062,
+                40.7725184
+            ],
+            "node": "42443313"
+        },
+        {
+            "name": "Ambrose",
+            "address": "Ambrose, Pier 16, New York, NY, United States of America",
+            "coordinates": [
+                -74.00244359010136,
+                40.70529295
+            ],
+            "node": "42422270"
+        },
+        {
+            "name": "Cleopatra's Needle",
+            "address": "Cleopatra's Needle, East Drive, New York, NY 10075-0381, United States of America",
+            "coordinates": [
+                -73.96539645,
+                40.779635850000005
+            ],
+            "node": "42452951"
+        },
+        {
+            "name": "Fireboat John J. Harvey",
+            "address": "Fireboat John J. Harvey, Hudson River Park Esplanade, New York, NY 10199, United States of America",
+            "coordinates": [
+                -74.0097949537388,
+                40.7523286
+            ],
+            "node": "4899886546"
+        },
+        {
+            "name": "Lightship Frying Pan",
+            "address": "Lightship Frying Pan, Hudson River Park Esplanade, New York, NY 10199, United States of America",
+            "coordinates": [
+                -74.00927431158088,
+                40.75210385
+            ],
+            "node": "4899886546"
+        },
+        {
+            "name": "Saint Paul's Chapel",
+            "address": "Saint Paul's Chapel, 209 Broadway, New York, NY 10007, United States of America",
+            "coordinates": [
+                -74.00918293227645,
+                40.71130245
+            ],
+            "node": "42428391"
+        },
+        {
+            "name": "Stonewall Inn",
+            "address": "Stonewall Inn, 53 Christopher Street, New York, NY 10014, United States of America",
+            "coordinates": [
+                -74.0021484,
+                40.7338007
+            ],
+            "node": "4679523598"
+        },
+        {
+            "name": "Charging Bull",
+            "address": "Charging Bull, Broadway, New York, NY 10003, United States of America",
+            "coordinates": [
+                -74.0134788,
+                40.705468
+            ],
+            "node": "42428365"
+        },
+        {
+            "name": "Angelina's",
+            "address": "Angelina's, 399 Ellis Street, New York, NY 10312, United States of America",
+            "coordinates": [
+                -74.2513558,
+                40.5134027
+            ],
+            "node": "42971247"
+        },
+        {
+            "name": "Bow Bridge",
+            "address": "Bow Bridge, New York, NY 10023-5104, United States of America",
+            "coordinates": [
+                -73.97176891989135,
+                40.77576035
+            ],
+            "node": "42435283"
+        },
+        {
+            "name": "Central Park Carousel",
+            "address": "Central Park Carousel, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -73.97524754999999,
+                40.76994265
+            ],
+            "node": "42457788"
+        },
+        {
+            "name": "Sherman Zwicker",
+            "address": "Sherman Zwicker, Pier 26 Tide Deck, New York, NY 10282, United States of America",
+            "coordinates": [
+                -74.01601106424279,
+                40.72027155000001
+            ],
+            "node": "42445291"
+        },
+        {
+            "name": "USCGC LILAC",
+            "address": "USCGC LILAC, Pier 25 North Moore Street, New York, NY 10013, United States of America",
+            "coordinates": [
+                -74.01402056406027,
+                40.72052825
+            ],
+            "node": "246858445"
+        },
+        {
+            "name": "One World Trade Center",
+            "address": "One World Trade Center, 285 Fulton Street, New York, NY 10048, United States of America",
+            "coordinates": [
+                -74.01317859995396,
+                40.7130186
+            ],
+            "node": "6865282549"
+        },
+        {
+            "name": "Roscoe Conkling",
+            "address": "Roscoe Conkling, East 23rd Street, New York, NY 10010, United States of America",
+            "coordinates": [
+                -73.98820159202032,
+                40.7412404
+            ],
+            "node": "42445867"
+        },
+        {
+            "name": "William Henry Seward Monument",
+            "address": "William Henry Seward Monument, East 23rd Street, New York, NY 10010, United States of America",
+            "coordinates": [
+                -73.98884015,
+                40.741497100000004
+            ],
+            "node": "42428201"
+        },
+        {
+            "name": "Chester Alan Arthur",
+            "address": "Chester Alan Arthur, East 26th Street, New York, NY 10001-7604, United States of America",
+            "coordinates": [
+                -73.98706935000001,
+                40.7427797
+            ],
+            "node": "42429876"
+        },
+        {
+            "name": "Admiral David Glasgow Farragut",
+            "address": "Admiral David Glasgow Farragut, East 26th Street, New York, NY 10001-7604, United States of America",
+            "coordinates": [
+                -73.9876746102174,
+                40.74275205
+            ],
+            "node": "7372860102"
+        },
+        {
+            "name": "Prometheus",
+            "address": "Prometheus, Rockefeller Plaza, New York, NY 10020-2402, United States of America",
+            "coordinates": [
+                -73.9785783,
+                40.7587051
+            ],
+            "node": "42440153"
+        },
+        {
+            "name": "7th Regiment Memorial",
+            "address": "7th Regiment Memorial, West Drive, New York, NY 10023-5104, United States of America",
+            "coordinates": [
+                -73.9764403,
+                40.7737621
+            ],
+            "node": "7802856372"
+        },
+        {
+            "name": "John F. Kennedy Memorial",
+            "address": "John F. Kennedy Memorial, Grand Army Plaza, New York, NY 11238, United States of America",
+            "coordinates": [
+                -73.9701683,
+                40.6742639
+            ],
+            "node": "4575780103"
+        },
+        {
+            "name": "Daniel Webster",
+            "address": "Daniel Webster, 72nd Street Transverse, New York, NY 10023-5104, United States of America",
+            "coordinates": [
+                -73.974118,
+                40.7747533
+            ],
+            "node": "42435272"
+        },
+        {
+            "name": "Ludwig van Beethoven",
+            "address": "Ludwig van Beethoven, The Mall, New York, NY 10153, United States of America",
+            "coordinates": [
+                -73.9718893,
+                40.7728773
+            ],
+            "node": "42429680"
+        },
+        {
+            "name": "Victor Herbert",
+            "address": "Victor Herbert, Former Drive, New York, NY 10153, United States of America",
+            "coordinates": [
+                -73.9722858,
+                40.7727282
+            ],
+            "node": "42429680"
+        },
+        {
+            "name": "5 in 1, 1973-74",
+            "address": "5 in 1, 1973-74, Park Row, New York, NY 10000, United States of America",
+            "coordinates": [
+                -74.0029361,
+                40.7127003
+            ],
+            "node": "4158789495"
+        },
+        {
+            "name": "Samuel F. B. Morse",
+            "address": "Samuel F. B. Morse, 72nd Street Transverse, New York, NY 10065, United States of America",
+            "coordinates": [
+                -73.967435,
+                40.7724831
+            ],
+            "node": "42436475"
+        },
+        {
+            "name": "Le Petit Versailles",
+            "address": "Le Petit Versailles, 346 East Houston Street, New York, NY 10002-1013, United States of America",
+            "coordinates": [
+                -73.9818662,
+                40.7210728
+            ],
+            "node": "3783071112"
+        },
+        {
+            "name": "Double Check",
+            "address": "Double Check, Liberty Street, New York, NY 10005, United States of America",
+            "coordinates": [
+                -74.0106058,
+                40.7093166
+            ],
+            "node": "42422042"
+        },
+        {
+            "name": "NY Skyride",
+            "address": "NY Skyride, 350 5th Avenue, New York, NY 10118, United States of America",
+            "coordinates": [
+                -73.9856549,
+                40.7483271
+            ],
+            "node": "42446701"
+        },
+        {
+            "name": "Winter Flea + Smorgasburg",
+            "address": "Winter Flea Smorgasburg, 241 37th Street, New York, NY 11232, United States of America",
+            "coordinates": [
+                -74.008331,
+                40.6559467
+            ],
+            "node": "42496102"
+        },
+        {
+            "name": "Top of the Rock",
+            "address": "Top of the Rock, 30 Rockefeller Plaza, New York, NY 10020, United States of America",
+            "coordinates": [
+                -73.9793952,
+                40.7590344
+            ],
+            "node": "42430356"
+        },
+        {
+            "name": "Color Factory",
+            "address": "Color Factory, 251 Spring Street, New York, NY 10013, United States of America",
+            "coordinates": [
+                -74.0054663,
+                40.7257695
+            ],
+            "node": "42442286"
+        },
+        {
+            "name": "Dante Alighieri",
+            "address": "Dante Alighieri, West 63rd Street, New York, NY 10023-7503, United States of America",
+            "coordinates": [
+                -73.9825535,
+                40.771792
+            ],
+            "node": "42443313"
+        },
+        {
+            "name": "James Stranahan",
+            "address": "James Stranahan, East Drive, New York, NY 11238, United States of America",
+            "coordinates": [
+                -73.9695173,
+                40.6721354
+            ],
+            "node": "4482239795"
+        },
+        {
+            "name": "Joker Stairs",
+            "address": "Joker Stairs, 1165 Shakespeare Avenue, New York, NY 10452, United States of America",
+            "coordinates": [
+                -73.9236054,
+                40.8357962
+            ],
+            "node": "2912071080"
+        },
+        {
+            "name": "Wyckoff House Museum",
+            "address": "Wyckoff House Museum, 5816 Clarendon Road, New York, NY 11203, United States of America",
+            "coordinates": [
+                -73.9208761,
+                40.6443616
+            ],
+            "node": "42473397"
+        },
+        {
+            "name": "The Falconer",
+            "address": "The Falconer, 72nd Street Transverse, New York, NY 10023-5104, United States of America",
+            "coordinates": [
+                -73.9738182,
+                40.7740994
+            ],
+            "node": "42435272"
+        },
+        {
+            "name": "Giuseppe Mazzini",
+            "address": "Giuseppe Mazzini, West Drive, New York, NY 10023-5104, United States of America",
+            "coordinates": [
+                -73.9766942,
+                40.7730089
+            ],
+            "node": "7802856349"
+        },
+        {
+            "name": "The Edge",
+            "address": "The Edge, West 33rd Street, New York, NY 10001, United States of America",
+            "coordinates": [
+                -74.0006727,
+                40.7539509
+            ],
+            "node": "6636032331"
+        },
+        {
+            "name": "Statue of Liberty",
+            "address": "Statue of Liberty, Flagpole Plaza, New York, NY 10004, United States of America",
+            "coordinates": [
+                -74.04454817144321,
+                40.689253199999996
+            ],
+            "node": "42518716"
+        }
+    ],
+    "parks": [
+        {
+            "name": "Pleasant Village Community Garden",
+            "address": "Pleasant Village Community Garden, 342 Pleasant Avenue, New York, NY 10035, United States of America",
+            "coordinates": [
+                -73.93175074256527,
+                40.7965012
+            ],
+            "node": "42439506"
+        },
+        {
+            "name": "Thomas Paine Park",
+            "address": "Thomas Paine Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.0027605041167,
+                40.7147504
+            ],
+            "node": "42427300"
+        },
+        {
+            "name": "The High Line",
+            "address": "The High Line, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.00489117085408,
+                40.74770384999999
+            ],
+            "node": "42437914"
+        },
+        {
+            "name": "Bryant Park",
+            "address": "Bryant Park, New York, NY 10018, United States of America",
+            "coordinates": [
+                -73.98354279430387,
+                40.75375085
+            ],
+            "node": "42430329"
+        },
+        {
+            "name": "Madison Square Park",
+            "address": "Madison Square Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -73.9879991555057,
+                40.742144749999994
+            ],
+            "node": "42436575"
+        },
+        {
+            "name": "Washington Market Park",
+            "address": "Washington Market Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.01152813116964,
+                40.7169464
+            ],
+            "node": "5812723036"
+        },
+        {
+            "name": "Gantry Plaza State Park",
+            "address": "Gantry Plaza State Park, New York, NY 11101, United States of America",
+            "coordinates": [
+                -73.9580061935508,
+                40.7463389
+            ],
+            "node": "277124927"
+        },
+        {
+            "name": "Greenacre Park",
+            "address": "Greenacre Park, New York, NY 10022, United States of America",
+            "coordinates": [
+                -73.96928514125514,
+                40.756264
+            ],
+            "node": "42440463"
+        },
+        {
+            "name": "Collect Pond Park",
+            "address": "Collect Pond Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.00181889586361,
+                40.71634885
+            ],
+            "node": "42445479"
+        },
+        {
+            "name": "Duarte Square",
+            "address": "Duarte Square, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.00545924907024,
+                40.722627200000005
+            ],
+            "node": "42430136"
+        },
+        {
+            "name": "Seward Park",
+            "address": "Seward Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -73.989126508281,
+                40.71488705
+            ],
+            "node": "42433550"
+        },
+        {
+            "name": "FDR Four Freedoms State Park",
+            "address": "FDR Four Freedoms State Park, New York, NY 10044, United States of America",
+            "coordinates": [
+                -73.96044613479104,
+                40.750659049999996
+            ],
+            "node": "1696727885"
+        },
+        {
+            "name": "Duane Park",
+            "address": "Duane Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.00933212328925,
+                40.7171264
+            ],
+            "node": "42430571"
+        },
+        {
+            "name": "Teardrop Park",
+            "address": "Teardrop Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.01560928193506,
+                40.716762599999996
+            ],
+            "node": "42429633"
+        },
+        {
+            "name": "Central Park",
+            "address": "Central Park, New York, NY, United States of America",
+            "coordinates": [
+                -73.9653627406542,
+                40.7827725
+            ],
+            "node": "42433927"
+        },
+        {
+            "name": "Tribeca Park",
+            "address": "Tribeca Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.00544656209678,
+                40.7201145
+            ],
+            "node": "42434855"
+        },
+        {
+            "name": "Little Island",
+            "address": "Little Island, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.01060823983104,
+                40.7420056
+            ],
+            "node": "402480678"
+        },
+        {
+            "name": "Matthews-Palmer Playground",
+            "address": "Matthews-Palmer Playground, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -73.99277651742423,
+                40.76133900000001
+            ],
+            "node": "42432706"
+        },
+        {
+            "name": "Honey Locust Park",
+            "address": "Honey Locust Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -73.96263774692622,
+                40.76006555
+            ],
+            "node": "371037281"
+        },
+        {
+            "name": "Nelson A. Rockefeller Park",
+            "address": "Nelson A. Rockefeller Park, Manhattan, New York, NY, United States of America",
+            "coordinates": [
+                -74.0167384985482,
+                40.7168342
+            ],
+            "node": "42429633"
+        }
+    ],
+    "restaurants": [
+        {
+            "name": "Sardi's",
+            "address": "Sardi's, 234 West 44th Street, New York, NY 10036, United States of America",
+            "coordinates": [
+                -73.98761601214207,
+                40.75775455
+            ],
+            "node": "42435671"
+        },
+        {
+            "name": "Battery Gardens",
+            "address": "Battery Gardens, 1 Battery Place, New York, NY 10004, United States of America",
+            "coordinates": [
+                -74.01503510401213,
+                40.70135825
+            ],
+            "node": "607911351"
+        },
+        {
+            "name": "Joe's Pizza",
+            "address": "Joe's Pizza, 7 Carmine Street, New York, NY 10014, United States of America",
+            "coordinates": [
+                -74.0020629,
+                40.7305467
+            ],
+            "node": "42430205"
+        },
+        {
+            "name": "Lombardi's Pizza",
+            "address": "Lombardi's Pizza, 32 Spring Street, New York, NY 10013, United States of America",
+            "coordinates": [
+                -73.9956097,
+                40.7215577
+            ],
+            "node": "42432302"
+        },
+        {
+            "name": "Tom's Restaurant",
+            "address": "Tom's Restaurant, 2880 Broadway, New York, NY 10025, United States of America",
+            "coordinates": [
+                -73.9654035,
+                40.8054303
+            ],
+            "node": "561035333"
+        },
+        {
+            "name": "The River Caf\u00e9",
+            "address": "The River Caf\u00e9, 1 Water Street, New York, NY 11201, United States of America",
+            "coordinates": [
+                -73.9948035,
+                40.7036769
+            ],
+            "node": "2340051732"
+        },
+        {
+            "name": "Katz's Delicatessen",
+            "address": "Katz's Delicatessen, 205 East Houston Street, New York, NY 10002, United States of America",
+            "coordinates": [
+                -73.987353,
+                40.7223431
+            ],
+            "node": "1919595911"
+        },
+        {
+            "name": "Delmonico's",
+            "address": "Delmonico's, 56 Beaver Street, New York, NY 10004, United States of America",
+            "coordinates": [
+                -74.0102055,
+                40.705042
+            ],
+            "node": "42437536"
+        },
+        {
+            "name": "Jean-Georges",
+            "address": "Jean-Georges, 1 Central Park West, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.9816528,
+                40.7689649
+            ],
+            "node": "1061531429"
+        },
+        {
+            "name": "Smoke Jazz & Supper Club",
+            "address": "Smoke Jazz & Supper Club, 2751 Broadway, New York, NY 10025, United States of America",
+            "coordinates": [
+                -73.9682057,
+                40.8011187
+            ],
+            "node": "42421745"
+        },
+        {
+            "name": "Jing Fong",
+            "address": "Jing Fong, 20 Elizabeth Street, New York, NY 10013, United States of America",
+            "coordinates": [
+                -73.9972031,
+                40.715983
+            ],
+            "node": "42440804"
+        },
+        {
+            "name": "Hallo Berlin",
+            "address": "Hallo Berlin, 626 10th Avenue, New York, NY 10036, United States of America",
+            "coordinates": [
+                -73.9941852,
+                40.7610811
+            ],
+            "node": "42443563"
+        },
+        {
+            "name": "Atlantic Grill",
+            "address": "Atlantic Grill, 49 West 64th Street, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.9813978,
+                40.7720849
+            ],
+            "node": "1061531685"
+        },
+        {
+            "name": "The Australian NYC",
+            "address": "The Australian NYC, 20 West 38th Street, New York, NY 10018, United States of America",
+            "coordinates": [
+                -73.9838618,
+                40.7512973
+            ],
+            "node": "42433604"
+        },
+        {
+            "name": "Sushi of Gari",
+            "address": "Sushi of Gari, 402 East 78th Street, New York, NY 10075, United States of America",
+            "coordinates": [
+                -73.95278,
+                40.7713448
+            ],
+            "node": "42436922"
+        },
+        {
+            "name": "Aquavit",
+            "address": "Aquavit, 65 East 55th Street, New York, NY 10022, United States of America",
+            "coordinates": [
+                -73.9721848,
+                40.7607818
+            ],
+            "node": "596775907"
+        },
+        {
+            "name": "Eleven Madison Park",
+            "address": "Eleven Madison Park, 11 Madison Avenue, New York, NY 10010, United States of America",
+            "coordinates": [
+                -73.9871904,
+                40.7415982
+            ],
+            "node": "42436575"
+        },
+        {
+            "name": "Le Bernardin",
+            "address": "Le Bernardin, 155 West 51st Street, New York, NY 10019, United States of America",
+            "coordinates": [
+                -73.9817677,
+                40.7612817
+            ],
+            "node": "42440004"
+        },
+        {
+            "name": "Sylvia's Restaurant",
+            "address": "Sylvia's Restaurant, 328 Malcolm X Boulevard, New York, NY 10027, United States of America",
+            "coordinates": [
+                -73.9445189,
+                40.8086285
+            ],
+            "node": "42446203"
+        },
+        {
+            "name": "Gallaghers Steakhouse",
+            "address": "Gallaghers Steakhouse, 228 West 52nd Street, New York, NY 10019, United States of America",
+            "coordinates": [
+                -73.9838317,
+                40.7628531
+            ],
+            "node": "42428312"
+        }
+    ],
+    "housing": [
+        {
+            "name": "Hotel Pennsylvania",
+            "address": "Hotel Pennsylvania, 401 7th Avenue, New York, NY 10001-2062, United States of America",
+            "coordinates": [
+                -73.99052472856631,
+                40.749675100000005
+            ],
+            "node": "42439440"
+        },
+        {
+            "name": "The Plaza",
+            "address": "The Plaza, 768 5th Avenue, New York, NY 10019, United States of America",
+            "coordinates": [
+                -73.97449410382455,
+                40.764459849999994
+            ],
+            "node": "42427764"
+        },
+        {
+            "name": "Trump International Hotel and Tower",
+            "address": "Trump International Hotel and Tower, 1 Central Park West, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.98153975857764,
+                40.769141149999996
+            ],
+            "node": "42421969"
+        },
+        {
+            "name": "Lotte New York Palace",
+            "address": "Lotte New York Palace, 455 Madison Avenue, New York, NY 10022, United States of America",
+            "coordinates": [
+                -73.97476900451042,
+                40.75798035
+            ],
+            "node": "42440453"
+        },
+        {
+            "name": "Eventi",
+            "address": "Eventi, 835 6th Avenue, New York, NY 10001, United States of America",
+            "coordinates": [
+                -73.99015071836203,
+                40.74709475
+            ],
+            "node": "42427797"
+        },
+        {
+            "name": "The Nomad",
+            "address": "The Nomad, 1170 Broadway, New York, NY 10001, United States of America",
+            "coordinates": [
+                -73.98859595269975,
+                40.744924600000004
+            ],
+            "node": "42428223"
+        },
+        {
+            "name": "Wyndham Garden Chinatown",
+            "address": "Wyndham Garden Chinatown, 93 Bowery, New York, NY 10002, United States of America",
+            "coordinates": [
+                -73.99516318110909,
+                40.71704325
+            ],
+            "node": "42437580"
+        },
+        {
+            "name": "W Hotels",
+            "address": "W Hotels, 201 Park Avenue South, New York, NY 10003, United States of America",
+            "coordinates": [
+                -73.98854288222026,
+                40.73657625
+            ],
+            "node": "42437021"
+        },
+        {
+            "name": "Stewart Hotel",
+            "address": "Stewart Hotel, 371 7th Avenue, New York, NY 10001, United States of America",
+            "coordinates": [
+                -73.99165851091166,
+                40.74871195
+            ],
+            "node": "42435422"
+        },
+        {
+            "name": "The Redbury New York",
+            "address": "The Redbury New York, 29 East 29th Street, New York, NY 10016, United States of America",
+            "coordinates": [
+                -73.98444780712413,
+                40.74467835
+            ],
+            "node": "42436746"
+        },
+        {
+            "name": "Thompson Central Park New York",
+            "address": "Thompson Central Park New York, 119 West 56th Street, New York, NY 10019, United States of America",
+            "coordinates": [
+                -73.97857202027754,
+                40.7643285
+            ],
+            "node": "42430378"
+        },
+        {
+            "name": "Warwick Hotel",
+            "address": "Warwick Hotel, 65 West 54th Street, New York, NY 10019, United States of America",
+            "coordinates": [
+                -73.97809397666808,
+                40.762463600000004
+            ],
+            "node": "42430371"
+        },
+        {
+            "name": "The New Yorker",
+            "address": "The New Yorker, 481 8th Avenue, New York, NY 10001, United States of America",
+            "coordinates": [
+                -73.99363226655242,
+                40.752795
+            ],
+            "node": "42435645"
+        },
+        {
+            "name": "Hotel Wolcott",
+            "address": "Hotel Wolcott, 4 West 31st Street, New York, NY 10001, United States of America",
+            "coordinates": [
+                -73.98670141364724,
+                40.746626649999996
+            ],
+            "node": "42451674"
+        },
+        {
+            "name": "Hotel Stanford",
+            "address": "Hotel Stanford, 43 West 32nd Street, New York, NY 10001, United States of America",
+            "coordinates": [
+                -73.98746428335087,
+                40.74823335000001
+            ],
+            "node": "6223969260"
+        },
+        {
+            "name": "Fairfield Inn & Suites",
+            "address": "Fairfield Inn & Suites, 338 West 36th Street, New York, NY 10018, United States of America",
+            "coordinates": [
+                -73.99422831259892,
+                40.753948
+            ],
+            "node": "42444964"
+        },
+        {
+            "name": "The Knickerbocker Hotel",
+            "address": "The Knickerbocker Hotel, 6 West 42nd Street, New York, NY 10036, United States of America",
+            "coordinates": [
+                -73.985979706842,
+                40.7552496
+            ],
+            "node": "42428283"
+        },
+        {
+            "name": "Four Seasons Hotel",
+            "address": "Four Seasons Hotel, 57 East 57th Street, New York, NY 10022, United States of America",
+            "coordinates": [
+                -73.97125668962013,
+                40.76230085
+            ],
+            "node": "596775941"
+        },
+        {
+            "name": "The Lexington",
+            "address": "The Lexington, 511 Lexington Avenue, New York, NY 10017, United States of America",
+            "coordinates": [
+                -73.97303572091195,
+                40.754906250000005
+            ],
+            "node": "42446987"
+        },
+        {
+            "name": "Grand Hyatt New York",
+            "address": "Grand Hyatt New York, 109 Depew Place, New York, NY 10017, United States of America",
+            "coordinates": [
+                -73.97632438188816,
+                40.7520431
+            ],
+            "node": "42446971"
+        }
+    ],
+    "museums": [
+        {
+            "name": "The Metropolitan Museum of Art",
+            "address": "The Metropolitan Museum of Art, 1000 5th Avenue, New York, NY 10035, United States of America",
+            "coordinates": [
+                -73.96338248033601,
+                40.7794396
+            ],
+            "node": "42439389"
+        },
+        {
+            "name": "Museum of Arts and Design",
+            "address": "Museum of Arts and Design, 2 Columbus Circle, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.98193610277778,
+                40.767331850000005
+            ],
+            "node": "42428332"
+        },
+        {
+            "name": "Guggenheim Museum",
+            "address": "Guggenheim Museum, 1071 5th Avenue, New York, NY 10128, United States of America",
+            "coordinates": [
+                -73.95892501810057,
+                40.7829932
+            ],
+            "node": "42445731"
+        },
+        {
+            "name": "The Jewish Museum",
+            "address": "The Jewish Museum, 1109 5th Avenue, New York, NY 10128, United States of America",
+            "coordinates": [
+                -73.95718268280334,
+                40.7854097
+            ],
+            "node": "42448726"
+        },
+        {
+            "name": "American Museum of Natural History",
+            "address": "American Museum of Natural History, 180 Central Park West, New York, NY 10024, United States of America",
+            "coordinates": [
+                -73.97424765735384,
+                40.7810974
+            ],
+            "node": "42443347"
+        },
+        {
+            "name": "Poster House",
+            "address": "Poster House, 119 West 23rd Street, New York, NY 10011, United States of America",
+            "coordinates": [
+                -73.99333646650419,
+                40.7435881
+            ],
+            "node": "42427423"
+        },
+        {
+            "name": "Dyckman Farmhouse Museum",
+            "address": "Dyckman Farmhouse Museum, 4881 Broadway, New York, NY 10034, United States of America",
+            "coordinates": [
+                -73.9228859,
+                40.8673822
+            ],
+            "node": "42429220"
+        },
+        {
+            "name": "Museum of American Finance",
+            "address": "Museum of American Finance, Wall Street, New York, NY 10005, United States of America",
+            "coordinates": [
+                -74.0091958,
+                40.7063713
+            ],
+            "node": "42448578"
+        },
+        {
+            "name": "Rubin Museum of Art",
+            "address": "Rubin Museum of Art, 150 West 17th Street, New York, NY 10011, United States of America",
+            "coordinates": [
+                -73.9977377,
+                40.7400959
+            ],
+            "node": "42439275"
+        },
+        {
+            "name": "South Street Seaport Museum",
+            "address": "South Street Seaport Museum, 12 Fulton Street, New York, NY 10038, United States of America",
+            "coordinates": [
+                -74.0036758,
+                40.706628
+            ],
+            "node": "42440353"
+        },
+        {
+            "name": "Museum of Sex",
+            "address": "Museum of Sex, 223 5th Avenue, New York, NY 10016, United States of America",
+            "coordinates": [
+                -73.9873576,
+                40.7440374
+            ],
+            "node": "42434800"
+        },
+        {
+            "name": "National Museum of Mathematics",
+            "address": "National Museum of Mathematics, 11 East 26th Street, New York, NY 10010, United States of America",
+            "coordinates": [
+                -73.9873437,
+                40.7432428
+            ],
+            "node": "42429874"
+        },
+        {
+            "name": "Museum of Chinese in America",
+            "address": "Museum of Chinese in America, 215 Centre Street, New York, NY 10013, United States of America",
+            "coordinates": [
+                -73.9990481,
+                40.7194172
+            ],
+            "node": "42427322"
+        },
+        {
+            "name": "9/11 Tribute Museum",
+            "address": "9/11 Tribute Museum, 92 Greenwich Street, New York, NY 10006, United States of America",
+            "coordinates": [
+                -74.0137633,
+                40.7079432
+            ],
+            "node": "42436181"
+        },
+        {
+            "name": "The Renee and Chaim Gross Foundation",
+            "address": "The Renee and Chaim Gross Foundation, 526 Laguardia Place, New York, NY 10012, United States of America",
+            "coordinates": [
+                -73.99882,
+                40.7284684
+            ],
+            "node": "1692433928"
+        },
+        {
+            "name": "Mmuseumm",
+            "address": "Mmuseumm, 4 Cortlandt Alley, New York, NY 10013, United States of America",
+            "coordinates": [
+                -74.0028203,
+                40.7173656
+            ],
+            "node": "42428420"
+        },
+        {
+            "name": "Museum of Reclaimed Urban Space",
+            "address": "Museum of Reclaimed Urban Space, 155 Avenue C, New York, NY 10009, United States of America",
+            "coordinates": [
+                -73.9778791,
+                40.7257313
+            ],
+            "node": "42430938"
+        },
+        {
+            "name": "Cooper\u2013Hewitt, Smithsonian Design Museum",
+            "address": "Cooper\u2013Hewitt, Smithsonian Design Museum, 2 East 91st Street, New York, NY 10128, United States of America",
+            "coordinates": [
+                -73.95769902873573,
+                40.784284299999996
+            ],
+            "node": "42456575"
+        },
+        {
+            "name": "New-York Historical Society",
+            "address": "New-York Historical Society, 170 Central Park West, New York, NY 10024, United States of America",
+            "coordinates": [
+                -73.97430375753298,
+                40.7792489
+            ],
+            "node": "42435301"
+        },
+        {
+            "name": "Ellis Island Immigration Museum",
+            "address": "Ellis Island Immigration Museum, Ellis Island Bridge, New York, NJ 10004, United States of America",
+            "coordinates": [
+                -74.0395482277728,
+                40.699131050000005
+            ],
+            "node": "246901366"
+        }
+    ],
+    "entertainment": [
+        {
+            "name": "Kaufman Music Center",
+            "address": "Kaufman Music Center, 129 West 67th Street, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.9829906649505,
+                40.775263249999995
+            ],
+            "node": "42428601"
+        },
+        {
+            "name": "Regal Battery Park",
+            "address": "Regal Battery Park, 102 North End Avenue, New York, NY 10282, United States of America",
+            "coordinates": [
+                -74.015169,
+                40.714742
+            ],
+            "node": "42446849"
+        },
+        {
+            "name": "Anthology Film Archives",
+            "address": "Anthology Film Archives, 32 2nd Avenue, New York, NY 10035, United States of America",
+            "coordinates": [
+                -73.9902601,
+                40.7247547
+            ],
+            "node": "42442843"
+        },
+        {
+            "name": "Michael Altman Fine Art",
+            "address": "Michael Altman Fine Art, 38 East 70th Street, New York, NY 10021, United States of America",
+            "coordinates": [
+                -73.965721,
+                40.7700521
+            ],
+            "node": "42429682"
+        },
+        {
+            "name": "Pace Gallery",
+            "address": "Pace Gallery, 540 West 25th Street, New York, NY 10001, United States of America",
+            "coordinates": [
+                -74.0049685,
+                40.7495759
+            ],
+            "node": "5730369220"
+        },
+        {
+            "name": "Radio City Music Hall",
+            "address": "Radio City Music Hall, West 50th Street, New York, NY 10019, United States of America",
+            "coordinates": [
+                -73.97927905642854,
+                40.7598116
+            ],
+            "node": "42430358"
+        },
+        {
+            "name": "Beacon Theater",
+            "address": "Beacon Theater, 2124 Broadway, New York, NY 10024, United States of America",
+            "coordinates": [
+                -73.9811314,
+                40.7804903
+            ],
+            "node": "1061531500"
+        },
+        {
+            "name": "Public Theater",
+            "address": "Public Theater, 425 Lafayette Street, New York, NY 10003, United States of America",
+            "coordinates": [
+                -73.99180466093696,
+                40.728929050000005
+            ],
+            "node": "4015190382"
+        },
+        {
+            "name": "Eden Gallery",
+            "address": "Eden Gallery, 470 Broome Street, New York, NY 10012, United States of America",
+            "coordinates": [
+                -74.00140753533226,
+                40.72282755
+            ],
+            "node": "42432152"
+        },
+        {
+            "name": "Comedy Cellar",
+            "address": "Comedy Cellar, 117 Minetta Lane, New York, NY 10012, United States of America",
+            "coordinates": [
+                -74.00056470997818,
+                40.730194
+            ],
+            "node": "1692433939"
+        },
+        {
+            "name": "IFC Center",
+            "address": "IFC Center, 323 6th Avenue, New York, NY 10014, United States of America",
+            "coordinates": [
+                -74.00166540166389,
+                40.731224299999994
+            ],
+            "node": "42430217"
+        },
+        {
+            "name": "Paris Theatre",
+            "address": "Paris Theatre, 4 West 58th Street, New York, NY 10019, United States of America",
+            "coordinates": [
+                -73.97430267133896,
+                40.76376354999999
+            ],
+            "node": "42427764"
+        },
+        {
+            "name": "Metropolitan Opera House",
+            "address": "Metropolitan Opera House, 30 Hearst Plaza, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.98479345575072,
+                40.772870499999996
+            ],
+            "node": "42442410"
+        },
+        {
+            "name": "American Airlines Theater",
+            "address": "American Airlines Theater, 227 West 42nd Street, New York, NY 10036, United States of America",
+            "coordinates": [
+                -73.98804227179323,
+                40.75681415
+            ],
+            "node": "42437363"
+        },
+        {
+            "name": "AMC Empire 25",
+            "address": "AMC Empire 25, 234 West 42nd Street, New York, NY 10036, United States of America",
+            "coordinates": [
+                -73.98926649582987,
+                40.75668515
+            ],
+            "node": "42435663"
+        },
+        {
+            "name": "Shrine World Music Venue",
+            "address": "Shrine World Music Venue, 2271 Adam Clayton Powell Jr. Boulevard, New York, NY 10030, United States of America",
+            "coordinates": [
+                -73.94402390432742,
+                40.814270449999995
+            ],
+            "node": "2141026494"
+        },
+        {
+            "name": "Manhattan Center",
+            "address": "Manhattan Center, 311 West 34th Street, New York, NY 10001, United States of America",
+            "coordinates": [
+                -73.99411989108398,
+                40.7529437
+            ],
+            "node": "42435645"
+        },
+        {
+            "name": "Central Park Zoo",
+            "address": "Central Park Zoo, 65th Street Transverse, New York, NY 10153, United States of America",
+            "coordinates": [
+                -73.97184547517396,
+                40.7676005
+            ],
+            "node": "42431649"
+        },
+        {
+            "name": "AMC Loews Lincoln Square 13",
+            "address": "AMC Loews Lincoln Square 13, 1998 Broadway, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.9817481,
+                40.7750135
+            ],
+            "node": "1061531527"
+        },
+        {
+            "name": "Merkin Concert Hall",
+            "address": "Merkin Concert Hall, 129 West 67th Street, New York, NY 10023, United States of America",
+            "coordinates": [
+                -73.9829549,
+                40.7752346
+            ],
+            "node": "42428601"
+        }
+    ]
+}

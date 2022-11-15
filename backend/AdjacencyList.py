@@ -9,7 +9,7 @@ class AdjacencyList:
 
     def create_adjacency_list(self):
         '''
-        Creates Adjacency Matrix from an OSM Graph 
+        Creates Adjacency List from an OSM Graph 
 
         type: dictionary
 
@@ -55,7 +55,7 @@ class AdjacencyList:
 
     def load_adjacency_list(self, city="none"):
         '''
-        If the adjacency list is already created and stored in the JSON file, call this method
+        If the adjacency list is already created and stored in a JSON file, call this method
         This will reduce time by loading the adjacency list from the JSON file instead of recreating it
 
         Parameters: 
@@ -76,4 +76,4 @@ class AdjacencyList:
         print("PERFORM SECOND ALGORITHM HERE (TBD)")
 
 al = AdjacencyList()
-al.load_adjacency_list("NY")
+al.load_adjacency_list("NY") #Load the NY Adjacency List
