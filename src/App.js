@@ -9,6 +9,8 @@ import SideBar from './components/SideBar';
 const App = () => {
 
 	const [markers, setMarkers] = useState({})
+	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "restaurants", "museums", "housing"])
+	
 	useEffect(() => { 
 		let tempMarkers = {}
 		for (let key in data) {
