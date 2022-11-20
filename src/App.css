@@ -1,4 +1,29 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.LeftSideBar {
+  height: 100%;
+  width: 300px;
+  font-size: 175%;
+  background-color: #e6e5e2;
+  position:absolute; 
+  z-index:401;
+  top: 0;
+}
+
 .leaflet-container {
   height: 100vh; 
   width: 100vw;
+}
+
+input[type=checkbox] {
+   width: 30px;
+   height: 20px;
 }
