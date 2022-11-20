@@ -8,25 +8,30 @@ import SideBar from './components/SideBar';
 
 const App = () => {
 
-	const [markers, setMarkers] = useState([])
+	const [markers, setMarkers] = useState({})
 	useEffect(() => { 
-		let tempMarkers = []
+		let tempMarkers = {}
 		for (let key in data) {
+			let tempData = []
 			for (let val in data[key]) {
-				let tempData = {
+				let info = {
 					name: data[key][val]["name"],
 					coordinates: data[key][val]["coordinates"],
 					feature: key
 				}
-				tempMarkers.push(tempData)
+				tempData.push(info)
 			}
+
+			tempMarkers[key] = tempData
 		}
 		setMarkers(tempMarkers)
 	}, [])
 
+	// {markers ? markers.map((marker) => <MarkerPopup marker={marker}></MarkerPopup>) : null} (add back later)
 
 	return (
 		<div>
+			{console.log(markers)}
 			<SideBar />
 			<MapContainer center={[40.754932, -73.984016]} zoom={13} minZoom={11} zoomControl={false} scrollWheelZoom={true}>
 			<TileLayer
@@ -34,7 +39,6 @@ const App = () => {
 				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 			/>
 			<ZoomControl position="topright"></ZoomControl>
-			{markers ? markers.map((marker) => <MarkerPopup marker={marker}></MarkerPopup>) : null}
 		</MapContainer>
 		</div>
 	);
