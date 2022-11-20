@@ -75,25 +75,28 @@ class AdjacencyList:
         with open(f"{city}_AL.json", "r") as file:
             self.adjacency_list = json.load(file)
 
-    def print_dijkstra_path(self, currentVertex, parents):
-        if currentVertex == -1:
-            return
+    def print_dijkstra_path(self, currentVertex, parents, path):
 
-        self.print_dijkstra_path(parents[currentVertex], parents)
+        if currentVertex == -1:
+            return path
+
+        self.print_dijkstra_path(parents[currentVertex], parents, path)
+        path.append(currentVertex)
         if parents[currentVertex] != -1:
-            km = self.adjacency_list[parents[currentVertex]
-                                     ][currentVertex][1] / 1000
-            miles = km * 0.6213711922
-            print("Distance: " + str(round(km, 2)) +
-                  "km/" + str(round(miles, 2)) + "mi")
+            # km = self.adjacency_list[parents[currentVertex]
+            # ][currentVertex][1] / 1000
+            # miles = km * 0.6213711922
+            # print("Distance: " + str(round(km, 2)) +
+            # "km/" + str(round(miles, 2)) + "mi")
             print(str(currentVertex) + ":", end=' ')
             print(
                 self.adjacency_list[parents[currentVertex]][currentVertex][0])
+
         else:
             print(str(currentVertex))
 
-    def dijkstra_algorithm(self, start, end, a_star, amplifier):
-
+    def dijkstra_algorithm(self, start, end, a_star, amplifier, storePath):
+        storePath.clear()
         start_time = timer()
         visited = {start: False}
         parents = {start: -1}
@@ -163,7 +166,8 @@ class AdjacencyList:
 
         print("Source Vertex: " + str(start) +
               " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
-        self.print_dijkstra_path(end, parents)
+
+        self.print_dijkstra_path(end, parents, storePath)
 
 
 al = AdjacencyList()
