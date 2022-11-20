@@ -1,9 +1,11 @@
-import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
 import { MapContainer, TileLayer } from 'react-leaflet'
 import data from './NY_LOC.json'
 import * as L from "leaflet"
-import { useEffect, useState } from 'react';
-import MarkerPopup from './components/MarkerPopup';
+import { useEffect, useState } from 'react'
+import MarkerPopup from './components/MarkerPopup'
+
 
 const App = () => {
 
@@ -28,12 +30,12 @@ const App = () => {
 	return (
 		<div>
 			<MapContainer center={[40.754932, -73.984016]} zoom={13} minZoom={11} scrollWheelZoom={true}>
-			<TileLayer
-				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-			/>
-			{markers ? markers.map((marker) => <MarkerPopup marker={marker}></MarkerPopup>) : null}
-		</MapContainer>
+				<TileLayer
+					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+				/>
+				{markers ? markers.map((marker) => <MarkerPopup marker={marker}></MarkerPopup>) : null}
+			</MapContainer>
 		</div>
 	);
 }
