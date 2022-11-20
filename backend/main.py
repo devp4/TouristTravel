@@ -4,9 +4,12 @@ import AdjacencyList
 list = AdjacencyList.AdjacencyList()
 list.create_adjacency_list()
 
+
 # print(list.adjacency_list)
 
-list.dijkstra_algorithm(42453604, 9179344055)
+list.dijkstra_algorithm(10197353721, 9194848477, False, 0)
+list.dijkstra_algorithm(10197353721, 9194848477, True, 1)
+
 # li = []
 
 # heapq.heappush(li, (1, 2))

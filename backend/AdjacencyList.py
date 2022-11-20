@@ -3,6 +3,8 @@ import json
 import os.path
 import sys
 import heapq
+import math
+from timeit import default_timer as timer
 
 
 class AdjacencyList:
@@ -40,13 +42,13 @@ class AdjacencyList:
 
         '''
 
-        ny_graph = ox.graph_from_place(
+        self.ny_graph = ox.graph_from_place(
             "New York, New York State", network_type="drive")
 
-        for node, _ in list(ny_graph.nodes(data=True)):
+        for node, _ in list(self.ny_graph.nodes(data=True)):
             self.adjacency_list[node] = {}
 
-        for edge in list(ny_graph.edges(data=True)):
+        for edge in list(self.ny_graph.edges(data=True)):
             node = edge[0]
             adj_node = edge[1]
             street_name = edge[2].get("name", "Unknown")
@@ -73,11 +75,11 @@ class AdjacencyList:
         with open(f"{city}_AL.json", "r") as file:
             self.adjacency_list = json.load(file)
 
-    def print_path(self, distances, currentVertex, parents):
+    def print_dijkstra_path(self, currentVertex, parents):
         if currentVertex == -1:
             return
 
-        self.print_path(distances, parents[currentVertex], parents)
+        self.print_dijkstra_path(parents[currentVertex], parents)
         if parents[currentVertex] != -1:
             km = self.adjacency_list[parents[currentVertex]
                                      ][currentVertex][1] / 1000
@@ -90,18 +92,17 @@ class AdjacencyList:
         else:
             print(str(currentVertex))
 
-    def dijkstra_algorithm(self, start, end):
+    def dijkstra_algorithm(self, start, end, a_star, amplifier):
 
-        # spt = [False] * len(self.adjacency_list)
-        # distance = [sys.maxsize] * len(self.adjacency_list)
-        spt = {start: False}
+        start_time = timer()
+        visited = {start: False}
         parents = {start: -1}
 
         distance = {start: 0}
         pq = []
         heapq.heappush(pq, (distance[start], start))
         while pq:
-            heapq.heapify(pq)
+
             extractedPair = heapq.heappop(pq)
 
             if end == extractedPair[1]:
@@ -109,21 +110,21 @@ class AdjacencyList:
 
             extractedVertex = extractedPair[1]
 
-            if extractedVertex not in spt:
-                spt[extractedVertex] = False
+            if extractedVertex not in visited:
+                visited[extractedVertex] = False
 
-            if not spt[extractedVertex]:
-                spt[extractedVertex] = True
+            if not visited[extractedVertex]:
+                visited[extractedVertex] = True
 
                 edges = self.adjacency_list[extractedVertex]
                 for key, value in edges.items():
 
                     destination = key
 
-                    if destination not in spt:
-                        spt[destination] = False
+                    if destination not in visited:
+                        visited[destination] = False
 
-                    if not spt[destination]:
+                    if not visited[destination]:
 
                         if extractedVertex not in distance:
                             distance[extractedVertex] = sys.maxsize
@@ -135,27 +136,34 @@ class AdjacencyList:
                         currentKey = distance[destination]
 
                         if currentKey > newKey:
+                            distance[destination] = newKey
+
+                            if a_star:
+                                x = self.ny_graph.nodes[end]['x'] - \
+                                    self.ny_graph.nodes[destination]['x']
+                                y = self.ny_graph.nodes[end]['y'] - \
+                                    self.ny_graph.nodes[destination]['y']
+                                heuristic = math.sqrt(
+                                    math.pow(x, 2) + math.pow(y, 2)) * math.pow(10, amplifier * 5)
+                                newKey = newKey + heuristic
+
                             p = (newKey, destination)
                             heapq.heappush(pq, p)
-                            distance[destination] = newKey
                             parents[destination] = extractedVertex
 
-        print("Dijkstra Algorithm:")
-        # print("Source Vertex: " + str(start) +
-        # " to vertex " + str(end) + " distance: " + str(distance[end]))
+        alg = "Dijkstra"
+        if a_star:
+            alg = "A* Search"
+        print(alg + " Algorithm:")
+        print("Execution Time: %ss" % round((timer() - start_time), 4))
+        print("Nodes visited: " + str(len(distance)))
+
         km = distance[end] / 1000
         miles = km * 0.6213711922
+
         print("Source Vertex: " + str(start) +
               " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
-        self.print_path(distance, end, parents)
-        # for key, value in distance.items():
-        # if key == end:
-        # print("Source Vertex: " + str(start) +
-        # " to vertex " + str(key) + " distance: " + str(value))
-        # self.print_path(distance, key, parents)
-
-    def second_algorithm(self):
-        print("PERFORM SECOND ALGORITHM HERE (TBD)")
+        self.print_dijkstra_path(end, parents)
 
 
 al = AdjacencyList()
