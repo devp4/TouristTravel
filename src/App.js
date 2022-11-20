@@ -28,20 +28,20 @@ const App = () => {
 		}
 		setMarkers(tempMarkers)
 	}, [])
-
-	// {markers ? markers.map((marker) => <MarkerPopup marker={marker}></MarkerPopup>) : null} (add back later)
-
+	
 	return (
 		<div>
-			{console.log(markers)}
 			<SideBar />
 			<MapContainer center={[40.754932, -73.984016]} zoom={13} minZoom={11} zoomControl={false} scrollWheelZoom={true}>
-			<TileLayer
-				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-			/>
-			<ZoomControl position="topright"></ZoomControl>
-		</MapContainer>
+				<TileLayer
+					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+				/>
+				<ZoomControl position="topright"></ZoomControl>
+				{viewMarkers ? viewMarkers.map((feature) => 
+					markers[feature] ? markers[feature].map((marker) => 
+						<MarkerPopup marker={marker}></MarkerPopup>): null) : null}
+			</MapContainer>
 		</div>
 	);
 }
