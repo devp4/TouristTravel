@@ -75,29 +75,22 @@ class AdjacencyList:
         with open(f"{city}_AL.json", "r") as file:
             self.adjacency_list = json.load(file)
 
-    def print_dijkstra_path(self, currentVertex, parents, path):
-
+    def store_shortest_path(self, currentVertex, parents, path):
         if currentVertex == -1:
+            path.reverse()
             return path
 
-        self.print_dijkstra_path(parents[currentVertex], parents, path)
         path.append(currentVertex)
-        if parents[currentVertex] != -1:
-            print(str(currentVertex) + ":", end=' ')
-            print(
-                self.adjacency_list[parents[currentVertex]][currentVertex][0])
-
-        else:
-            print(str(currentVertex))
+        return self.store_shortest_path(parents[currentVertex], parents, path)
 
     # args: start is starting node, end is destination node,
     #       a_star: True for A* and False for Dijkstra,
     #       amplifier (A* only): default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time,
-    #       storePath: external list filled with the nodes visited in the shortest path from start to end
     #
-    # returns tuple (execution time in seconds, # of nodes visited, total distance in km, total distance in miles)
-    def dijkstra_algorithm(self, start, end, a_star, amplifier, storePath):
-        storePath.clear()
+    # returns tuple (external list filled with the nodes visited in the shortest path from start to end,
+    #               # of nodes visited,
+    #               # distance pair: total distance in km [0], total distance in miles [1])
+    def dijkstra_algorithm(self, start, end, a_star, amplifier):
         end_time = 0
         start_time = timer()
         visited = {start: False}
@@ -170,8 +163,7 @@ class AdjacencyList:
         print("Source Vertex: " + str(start) +
               " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
 
-        self.print_dijkstra_path(end, parents, storePath)
-        return (round(end_time - start_time, 4), len(distance), round(km, 2), round(miles, 2))
+        return (self.store_shortest_path(end, parents, []), round(end_time - start_time, 4), len(distance), (round(km, 2), round(miles, 2)))
 
 
 al = AdjacencyList()

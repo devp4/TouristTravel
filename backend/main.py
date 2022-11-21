@@ -4,11 +4,8 @@ list = AdjacencyList.AdjacencyList()
 list.create_adjacency_list()
 
 
-li = []
-dj = list.dijkstra_algorithm(4202402640, 42472954, False, 0, li)
+dj = list.dijkstra_algorithm(4202402640, 42472954, False, 0)
 print(dj)
-print(li)
 
-ast = list.dijkstra_algorithm(4202402640, 42472954, True, 1, li)
+ast = list.dijkstra_algorithm(4202402640, 42472954, True, 1)
 print(ast)
-print(li)
