@@ -83,11 +83,6 @@ class AdjacencyList:
         self.print_dijkstra_path(parents[currentVertex], parents, path)
         path.append(currentVertex)
         if parents[currentVertex] != -1:
-            # km = self.adjacency_list[parents[currentVertex]
-            # ][currentVertex][1] / 1000
-            # miles = km * 0.6213711922
-            # print("Distance: " + str(round(km, 2)) +
-            # "km/" + str(round(miles, 2)) + "mi")
             print(str(currentVertex) + ":", end=' ')
             print(
                 self.adjacency_list[parents[currentVertex]][currentVertex][0])
@@ -95,8 +90,15 @@ class AdjacencyList:
         else:
             print(str(currentVertex))
 
+    # args: start is starting node, end is destination node,
+    #       a_star: True for A* and False for Dijkstra,
+    #       amplifier: default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time (only for A*),
+    #       storePath: external list filled with the nodes visited in the shortest path start to end
+    #
+    # returns tuple (execution time in seconds, # of nodes visited, total distance in km, total distance in miles)
     def dijkstra_algorithm(self, start, end, a_star, amplifier, storePath):
         storePath.clear()
+        end_time = 0
         start_time = timer()
         visited = {start: False}
         parents = {start: -1}
@@ -109,6 +111,7 @@ class AdjacencyList:
             extractedPair = heapq.heappop(pq)
 
             if end == extractedPair[1]:
+                end_time = timer()
                 break
 
             extractedVertex = extractedPair[1]
@@ -158,7 +161,7 @@ class AdjacencyList:
         if a_star:
             alg = "A* Search"
         print(alg + " Algorithm:")
-        print("Execution Time: %ss" % round((timer() - start_time), 4))
+        print("Execution Time: %ss" % round(end_time - start_time, 4))
         print("Nodes visited: " + str(len(distance)))
 
         km = distance[end] / 1000
@@ -168,6 +171,7 @@ class AdjacencyList:
               " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
 
         self.print_dijkstra_path(end, parents, storePath)
+        return (round(end_time - start_time, 4), len(distance), round(km, 2), round(miles, 2))
 
 
 al = AdjacencyList()
