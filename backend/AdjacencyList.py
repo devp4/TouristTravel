@@ -92,8 +92,8 @@ class AdjacencyList:
 
     # args: start is starting node, end is destination node,
     #       a_star: True for A* and False for Dijkstra,
-    #       amplifier: default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time (only for A*),
-    #       storePath: external list filled with the nodes visited in the shortest path start to end
+    #       amplifier (A* only): default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time,
+    #       storePath: external list filled with the nodes visited in the shortest path from start to end
     #
     # returns tuple (execution time in seconds, # of nodes visited, total distance in km, total distance in miles)
     def dijkstra_algorithm(self, start, end, a_star, amplifier, storePath):
