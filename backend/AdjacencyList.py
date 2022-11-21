@@ -163,7 +163,7 @@ class AdjacencyList:
         print("Source Vertex: " + str(start) +
               " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
 
-        return (self.store_shortest_path(end, parents, []), round(end_time - start_time, 4), len(distance), (round(km, 2), round(miles, 2)))
+        return {"path": self.store_shortest_path(end, parents, []), "exec_time": round(end_time - start_time, 4), "nodes_visited": len(distance), "distance": [round(km, 2), round(miles, 2)]}
 
 
 al = AdjacencyList()
