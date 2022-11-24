@@ -5,12 +5,14 @@ import sys
 import heapq
 import math
 from timeit import default_timer as timer
-
+import shapely.geometry
 
 class AdjacencyList:
 
     def __init__(self) -> None:
         self.adjacency_list = {}
+        self.ny_graph = ox.graph_from_place("New York, New York State", network_type="drive")
+        print("GRAPH LOADED")
 
     def create_adjacency_list(self):
         '''
@@ -68,13 +70,28 @@ class AdjacencyList:
             city: string - load adjacency list for city given (for now, NY and LA)
         '''
 
-        if not os.path.exists(f"{city}_AL.json"):
+        if not os.path.exists(fr".\data\adjacency-lists\{city}_AL.json"):
             raise Exception(
                 f"The adjacency list for {city} does not exist")
 
-        with open(f"{city}_AL.json", "r") as file:
+        with open(fr".\data\adjacency-lists\{city}_AL.json", "r") as file:
             self.adjacency_list = json.load(file)
 
+    def print_extra(self, a_star, start, end, distance, end_time, start_time): 
+        alg = "Dijkstra"
+        if a_star:
+            alg = "A* Search"
+        print(alg + " Algorithm:")
+        print("Execution Time: %ss" % round(end_time - start_time, 4))
+        print("Nodes visited: " + str(len(distance)))
+
+        km = distance[end] / 1000
+        miles = km * 0.6213711922
+
+        print("Source Vertex: " + str(start) +
+              " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
+
+        
     def store_shortest_path(self, currentVertex, parents, path):
         if currentVertex == -1:
             path.reverse()
@@ -89,9 +106,11 @@ class AdjacencyList:
           a_star: True for A* and False for Dijkstra,
           amplifier (A* only): default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time,
     
-        returns tuple (external list filled with the nodes visited in the shortest path from start to end,
-            of nodes visited,
-            distance pair: total distance in km [0], total distance in miles [1])
+        returns dictionary 
+            path: external list filled with the nodes visited in the shortest path from start to end,
+            nodes_visited: number of nodes visited,
+            distance: total distance in km [0], total distance in miles [1])
+            exec_time: algorithm execution time
         '''
         end_time = 0
         start_time = timer()
@@ -152,17 +171,36 @@ class AdjacencyList:
                             heapq.heappush(pq, p)
                             parents[destination] = extractedVertex
 
-        alg = "Dijkstra"
-        if a_star:
-            alg = "A* Search"
-        print(alg + " Algorithm:")
-        print("Execution Time: %ss" % round(end_time - start_time, 4))
-        print("Nodes visited: " + str(len(distance)))
-
         km = distance[end] / 1000
         miles = km * 0.6213711922
 
-        print("Source Vertex: " + str(start) +
-              " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
-
         return {"path": self.store_shortest_path(end, parents, []), "exec_time": round(end_time - start_time, 4), "nodes_visited": len(distance), "distance": [round(km, 2), round(miles, 2)]}
+    
+    def getGeoJSON(self, path):
+        geometries = []
+        for i in range(len(path)-1): 
+            pair = path[i:i+2]
+            source, dest = int(pair[0]), int(pair[1])
+            geo = self.ny_graph[source][dest][0].get("geometry", None)
+            if geo: 
+                geometries.append(geo)
+            else:
+                x1, y1 = self.ny_graph.nodes[source]['x'], self.ny_graph.nodes[source]['y']
+                x2, y2 = self.ny_graph.nodes[dest]['x'], self.ny_graph.nodes[dest]['y']
+                lineString = shapely.geometry.LineString([(x1, y1), (x2, y2)])
+                geometries.append(lineString)
+
+
+        geojson = {
+            "type": "FeatureCollection", 
+            "features": []
+        }
+
+        for shapelyObject in geometries: 
+            data = shapely.geometry.mapping(shapelyObject)
+            geojson["features"].append({
+                "type": "Feature",
+                "geometry": data
+            })
+
+        return geojson

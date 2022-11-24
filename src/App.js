@@ -1,5 +1,5 @@
 import './App.css';
-import { MapContainer, TileLayer, ZoomControl } from 'react-leaflet'
+import { MapContainer, TileLayer, ZoomControl, GeoJSON } from 'react-leaflet'
 import data from './NY_LOC.json'
 import * as L from "leaflet"
 import { useEffect, useState } from 'react';
@@ -11,7 +11,7 @@ const App = () => {
 	const [markers, setMarkers] = useState({})
 	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "restaurants", "museums", "housing"])
 	const [nodes, setNodes] = useState([])
-	const [route, setRoute] = useState({})
+	const [route, setRoute] = useState(undefined)
 
 	useEffect(() => { 
 		let tempMarkers = {}
@@ -49,17 +49,15 @@ const App = () => {
 	useEffect(() => {
 		// When length of route is > 2, find shortest path between nodes
 		if (nodes.length < 2) {
-			console.log("less than 2")
 			return
 		}
 		
 		const response = getPath({nodes: nodes})
-		response.then((response) => response.json()).then((data) => setRoute(data))
+		response.then((response) => response.json()).then((data) => setRoute(data["GeoJSON"]))
 	}, [nodes])
 	
 	return (
 		<div>
-			{console.log(route)}
 			<SideBar />
 			<MapContainer center={[40.754932, -73.984016]} zoom={13} minZoom={11} zoomControl={false} scrollWheelZoom={true}>
 				<TileLayer
@@ -70,6 +68,7 @@ const App = () => {
 				{viewMarkers ? viewMarkers.map((feature) => 
 					markers[feature] ? markers[feature].map((marker) => 
 						<MarkerPopup marker={marker} setNodes={setNodes}></MarkerPopup>): null) : null}
+				{route ? <GeoJSON data={route["features"]}></GeoJSON> : null}
 			</MapContainer>
 		</div>
 	);
