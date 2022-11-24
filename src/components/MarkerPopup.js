@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import {Marker, Popup } from 'react-leaflet'
 import * as L from 'leaflet'
 
-const MarkerPopup = ({ marker }) => {
+const MarkerPopup = ({ marker, setNodes }) => {
     const LeafIcon = L.Icon.extend({
         options: {}
     })
@@ -46,10 +46,21 @@ const MarkerPopup = ({ marker }) => {
         changeIcon(marker.feature)
     }, [])
 
+    const addStop = (node) => {
+        setNodes((current) => [...current, node])
+    }
+
     return (
         <div>
             <Marker position={[marker.coordinates[1], marker.coordinates[0]]} icon={icon}>
-                <Popup>{marker.name}</Popup>
+                <Popup>
+                    <div>
+                        <h3>{marker.name}</h3>
+                        <h4>{marker.address}</h4>
+                        <h4>{marker.node}</h4>
+                        <button onClick={() => addStop(marker.node)}>Add Stop</button>
+                    </div>
+                </Popup>
             </Marker>
         </div>
     )
