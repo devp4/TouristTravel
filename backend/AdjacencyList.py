@@ -67,7 +67,7 @@ class AdjacencyList:
         Parameters: 
             city: string - load adjacency list for city given (for now, NY and LA)
         '''
-        # f"{city}
+
         if not os.path.exists(f"{city}_AL.json"):
             raise Exception(
                 f"The adjacency list for {city} does not exist")
@@ -83,14 +83,16 @@ class AdjacencyList:
         path.append(currentVertex)
         return self.store_shortest_path(parents[currentVertex], parents, path)
 
-    # args: start is starting node, end is destination node,
-    #       a_star: True for A* and False for Dijkstra,
-    #       amplifier (A* only): default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time,
-    #
-    # returns tuple (external list filled with the nodes visited in the shortest path from start to end,
-    #               # of nodes visited,
-    #               # distance pair: total distance in km [0], total distance in miles [1])
     def dijkstra_algorithm(self, start, end, a_star, amplifier):
+        '''
+        args: start is starting node, end is destination node,
+          a_star: True for A* and False for Dijkstra,
+          amplifier (A* only): default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time,
+    
+        returns tuple (external list filled with the nodes visited in the shortest path from start to end,
+            of nodes visited,
+            distance pair: total distance in km [0], total distance in miles [1])
+        '''
         end_time = 0
         start_time = timer()
         visited = {start: False}
@@ -164,7 +166,3 @@ class AdjacencyList:
               " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
 
         return {"path": self.store_shortest_path(end, parents, []), "exec_time": round(end_time - start_time, 4), "nodes_visited": len(distance), "distance": [round(km, 2), round(miles, 2)]}
-
-
-al = AdjacencyList()
-al.load_adjacency_list("NY")  # Load the NY Adjacency List
