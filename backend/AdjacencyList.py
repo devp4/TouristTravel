@@ -1,8 +1,13 @@
 import osmnx as ox
 import json
 import os.path
+import sys
+import heapq
+import math
+from timeit import default_timer as timer
 
-class AdjacencyList: 
+
+class AdjacencyList:
 
     def __init__(self) -> None:
         self.adjacency_list = {}
@@ -16,7 +21,7 @@ class AdjacencyList:
         node_id: {
             adjacent_node: (street name, length)
         }
-        
+
         Ex: 
             "3573083362": {
                 "98446168": [
@@ -34,15 +39,16 @@ class AdjacencyList:
             }        
 
             Node 3573083362 connects to nodes 98446168, 3573083360, and 98572856. The length of the street represents the weight.
-        
+
         '''
 
-        ny_graph = ox.graph_from_place("New York, New York State", network_type="drive")
+        self.ny_graph = ox.graph_from_place(
+            "New York, New York State", network_type="drive")
 
-        for node, _ in list(ny_graph.nodes(data=True)): 
+        for node, _ in list(self.ny_graph.nodes(data=True)):
             self.adjacency_list[node] = {}
 
-        for edge in list(ny_graph.edges(data=True)): 
+        for edge in list(self.ny_graph.edges(data=True)):
             node = edge[0]
             adj_node = edge[1]
             street_name = edge[2].get("name", "Unknown")
@@ -50,7 +56,7 @@ class AdjacencyList:
 
             self.adjacency_list[node][adj_node] = (street_name, length)
 
-        with open("NY_AL.json", "w") as file: 
+        with open("NY_AL.json", "w") as file:
             json.dump(self.adjacency_list, file, indent=4)
 
     def load_adjacency_list(self, city="none"):
@@ -60,20 +66,105 @@ class AdjacencyList:
 
         Parameters: 
             city: string - load adjacency list for city given (for now, NY and LA)
-        ''' 
-
+        '''
+        # f"{city}
         if not os.path.exists(f"{city}_AL.json"):
-            raise Exception(f"The adjacency list for city {city} does not exist")
+            raise Exception(
+                f"The adjacency list for {city} does not exist")
 
-        with open(f"{city}_AL.json", "r") as file: 
+        with open(f"{city}_AL.json", "r") as file:
             self.adjacency_list = json.load(file)
 
+    def store_shortest_path(self, currentVertex, parents, path):
+        if currentVertex == -1:
+            path.reverse()
+            return path
 
-    def dijkstra_algorithm(self): 
-        print("PERFORM DIJKSTRA ALGORITHM HERE")
+        path.append(currentVertex)
+        return self.store_shortest_path(parents[currentVertex], parents, path)
 
-    def second_algorithm(self): 
-        print("PERFORM SECOND ALGORITHM HERE (TBD)")
+    # args: start is starting node, end is destination node,
+    #       a_star: True for A* and False for Dijkstra,
+    #       amplifier (A* only): default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time,
+    #
+    # returns tuple (external list filled with the nodes visited in the shortest path from start to end,
+    #               # of nodes visited,
+    #               # distance pair: total distance in km [0], total distance in miles [1])
+    def dijkstra_algorithm(self, start, end, a_star, amplifier):
+        end_time = 0
+        start_time = timer()
+        visited = {start: False}
+        parents = {start: -1}
+
+        distance = {start: 0}
+        pq = []
+        heapq.heappush(pq, (distance[start], start))
+        while pq:
+
+            extractedPair = heapq.heappop(pq)
+
+            if end == extractedPair[1]:
+                end_time = timer()
+                break
+
+            extractedVertex = extractedPair[1]
+
+            if extractedVertex not in visited:
+                visited[extractedVertex] = False
+
+            if not visited[extractedVertex]:
+                visited[extractedVertex] = True
+
+                edges = self.adjacency_list[extractedVertex]
+                for key, value in edges.items():
+
+                    destination = key
+
+                    if destination not in visited:
+                        visited[destination] = False
+
+                    if not visited[destination]:
+
+                        if extractedVertex not in distance:
+                            distance[extractedVertex] = sys.maxsize
+
+                        if destination not in distance:
+                            distance[destination] = sys.maxsize
+
+                        newKey = distance[extractedVertex] + value[1]
+                        currentKey = distance[destination]
+
+                        if currentKey > newKey:
+                            distance[destination] = newKey
+
+                            if a_star:
+                                x = self.ny_graph.nodes[end]['x'] - \
+                                    self.ny_graph.nodes[destination]['x']
+                                y = self.ny_graph.nodes[end]['y'] - \
+                                    self.ny_graph.nodes[destination]['y']
+                                heuristic = math.sqrt(
+                                    math.pow(x, 2) + math.pow(y, 2)) * math.pow(10, amplifier * 5)
+                                newKey = newKey + heuristic
+
+                            p = (newKey, destination)
+                            heapq.heappush(pq, p)
+                            parents[destination] = extractedVertex
+
+        alg = "Dijkstra"
+        if a_star:
+            alg = "A* Search"
+        print(alg + " Algorithm:")
+        print("Execution Time: %ss" % round(end_time - start_time, 4))
+        print("Nodes visited: " + str(len(distance)))
+
+        km = distance[end] / 1000
+        miles = km * 0.6213711922
+
+        print("Source Vertex: " + str(start) +
+              " | End Vertex: " + str(end) + " | Distance: " + str(round(km, 2)) + "km/" + str(round(miles, 2))+"mi")
+
+        return {"path": self.store_shortest_path(end, parents, []), "exec_time": round(end_time - start_time, 4), "nodes_visited": len(distance), "distance": [round(km, 2), round(miles, 2)]}
+
 
 al = AdjacencyList()
-al.load_adjacency_list("NY") #Load the NY Adjacency List
+al.load_adjacency_list("NY")  # Load the NY Adjacency List
