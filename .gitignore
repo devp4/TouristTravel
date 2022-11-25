@@ -6,6 +6,8 @@
 .pnp.js
 /backend/venv
 /backend/cache
+/backend/__pycache__
+.vscode
 
 # testing
 /coverage
