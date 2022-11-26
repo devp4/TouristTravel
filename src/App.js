@@ -1,8 +1,8 @@
 import './App.css';
 import { MapContainer, TileLayer, ZoomControl, GeoJSON } from 'react-leaflet'
-import data from './NY_LOC.json'
+import locations from './NY_LOC.json'
 import * as L from "leaflet"
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import MarkerPopup from './components/MarkerPopup';
 import SideBar from './components/SideBar';
 
@@ -12,17 +12,19 @@ const App = () => {
 	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "restaurants", "museums", "housing"])
 	const [nodes, setNodes] = useState([])
 	const [route, setRoute] = useState(undefined)
+	const [data, setData] = useState({})
+	const [geoLayer, setgeoLayer] = useState(1)
 
 	useEffect(() => { 
 		let tempMarkers = {}
-		for (let key in data) {
+		for (let key in locations) {
 			let tempData = []
-			for (let val in data[key]) {
+			for (let val in locations[key]) {
 				let info = {
-					name: data[key][val]["name"],
-					address: data[key][val]["address"],
-					coordinates: data[key][val]["coordinates"],
-					node: data[key][val]["node"],
+					name: locations[key][val]["name"],
+					address: locations[key][val]["address"],
+					coordinates: locations[key][val]["coordinates"],
+					node: locations[key][val]["node"],
 					feature: key
 				}
 
@@ -53,11 +55,16 @@ const App = () => {
 		}
 		
 		const response = getPath({nodes: nodes})
-		response.then((response) => response.json()).then((data) => setRoute(data["GeoJSON"]))
+		response.then((response) => response.json()).then((data) => {
+			setData(data["data"])
+			setgeoLayer((current) => current + 1)
+			setRoute(data["GeoJSON"])
+		})
 	}, [nodes])
 	
 	return (
 		<div>
+			{console.log(data)}
 			<SideBar />
 			<MapContainer center={[40.754932, -73.984016]} zoom={13} minZoom={11} zoomControl={false} scrollWheelZoom={true}>
 				<TileLayer
@@ -68,7 +75,7 @@ const App = () => {
 				{viewMarkers ? viewMarkers.map((feature) => 
 					markers[feature] ? markers[feature].map((marker) => 
 						<MarkerPopup marker={marker} setNodes={setNodes}></MarkerPopup>): null) : null}
-				{route ? <GeoJSON data={route["features"]}></GeoJSON> : null}
+				{route ? <GeoJSON key={geoLayer} data={route["features"]}></GeoJSON> : null}
 			</MapContainer>
 		</div>
 	);
