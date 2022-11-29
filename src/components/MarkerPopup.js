@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Marker, Popup } from "react-leaflet";
 import * as L from "leaflet";
 
-const MarkerPopup = ({ marker, setNodes }) => {
+const MarkerPopup = ({ marker, nodes, setNodes }) => {
   const LeafIcon = L.Icon.extend({
     options: {},
   });
@@ -14,6 +14,7 @@ const MarkerPopup = ({ marker, setNodes }) => {
   });
 
   const [icon, setIcon] = useState(PopupIcon);
+  const [popupRef, setpopupRef] = useState(undefined)
 
   const changeIcon = async (feature) => {
     if (feature === "tourism") {
@@ -54,8 +55,14 @@ const MarkerPopup = ({ marker, setNodes }) => {
   }, []);
 
   const addStop = (node) => {
+    popupRef._closeButton.click()
     setNodes((current) => [...current, node]);
   };
+
+  const removeStop = (node) => {
+    popupRef._closeButton.click()
+    setNodes((current) => current.filter(item => item !== node))
+  }
 
   return (
     <div>
@@ -63,12 +70,12 @@ const MarkerPopup = ({ marker, setNodes }) => {
         position={[marker.coordinates[1], marker.coordinates[0]]}
         icon={icon}
       >
-        <Popup>
+        <Popup ref={setpopupRef}>
           <div>
             <h3>{marker.name}</h3>
             <h4>{marker.address}</h4>
             <h4>{marker.node}</h4>
-            <button onClick={() => addStop(marker.node)}>Add Stop</button>
+            {nodes.includes(marker.node) ? <button onClick={() => removeStop(marker.node)}>Remove Stop</button> : <button onClick={() => addStop(marker.node)}>Add Stop</button>}
           </div>
         </Popup>
       </Marker>
