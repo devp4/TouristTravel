@@ -9,14 +9,25 @@ body {
 }
 
 .LeftSideBar {
-  height: 100%;
-  width: 300px;
-  font-size: 175%;
-  background-color: #e6e5e2;
+  border-radius: 30px;
+  height: 25%;
+  min-height: 200px;
+  margin: 0.5%;
+  width: 10%;
+  background-color: rgba(255,255,255,.75);
   position:absolute; 
   z-index:401;
   top: 0;
 }
+
+.LeftSideBar h2{
+  margin-left:5%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size:2vw;
+}
+
+
 
 .goto-div {
   background-color: rebeccapurple;
@@ -36,6 +47,19 @@ body {
 }
 
 input[type=checkbox] {
-   width: 30px;
-   height: 20px;
+   margin: 2px;
+   display:inline-block;
+   min-width: 15px;
+   min-height: 15px;
+   width: 2vw;
+   height: 2vh;
+   vertical-align: middle;
+   position: relative;
+   bottom: 1px;
+   left: 1px;
+}
+
+label {
+  display:block;
+  font-size:max(0.9vw, 12px);
 }
