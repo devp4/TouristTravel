@@ -1,85 +1,76 @@
 import "../App.css";
-import { useEffect, useState } from 'react';
 
-const SideBar = () => {
-    const [tourCheck, setTourCheck] = useState(false);
-    const [parkCheck, setParkCheck] = useState(false);
-    const [resCheck, setResCheck] = useState(false);
-    const [musCheck, setMusCheck] = useState(false);
-    const [houseCheck, setHouseCheck] = useState(false);
-    const [enterCheck, setEnterCheck] = useState(false);
+const SideBar = ({ viewMarkers, setviewMarkers }) => {
+    const setValue = (feature) => {
+        // Check checkmark if viewing otherwise blank
+        if (viewMarkers.includes(feature)) {
+            return true
+        }
 
-    const touristChecked = () => {
-        setTourCheck(!tourCheck);
-    }
-    
-    const parksChecked = () => {
-       setParkCheck(!parkCheck);
+        return false
     }
 
-    const restaurantsChecked = () => {
-       setResCheck(!resCheck);
+    const changeValue = (feature) => {
+        if (viewMarkers.includes(feature)) {
+            setviewMarkers((current) => current.filter((item) => item !== feature))
+        }
+        else {
+            setviewMarkers([...viewMarkers, feature])
+        }
     }
 
-    const museumsChecked = () => {
-       setMusCheck(!musCheck);
-    }
-
-    const housingChecked = () => {
-       setHouseCheck(!houseCheck);
-    }
-
-    const entertainmentChecked = () => {
-       setEnterCheck(!enterCheck);
-    }
-    
     return (
-        <div className="LeftSideBar">
-            Markers
-        <br></br>
-        <Checkbox
-            label="Tourist Attractions"
-            value={tourCheck}
-           onChange={setTourCheck}
-        />
-        <br></br>
-        <Checkbox
-            label="Parks"
-            value={parkCheck}
-           onChange={setParkCheck}
-        />
-        <br></br>
-        <Checkbox
-            label="Restaurants"
-            value={resCheck}
-           onChange={setResCheck}
-        />
-        <br></br>
-        <Checkbox
-            label="Museums"
-            value={musCheck}
-           onChange={setMusCheck}
-        />
-        <br></br>
-        <Checkbox
-            label="Housing"
-            value={houseCheck}
-           onChange={setHouseCheck}
-        />
-        <br></br>
-        <Checkbox
-            label="Entertainment"
-            value={enterCheck}
-           onChange={setEnterCheck}
-        />
+        <div className="LeftSideBar">Features
+            <br></br>
+            <Checkbox
+                label="Tourist Attractions"
+                id="toursim"
+                value={() => setValue("tourism")}
+                onChange={() => changeValue("tourism")}
+            />
+            <br></br>
+            <Checkbox
+                label="Parks"
+                value={() => setValue("parks")}
+                id="parks"
+                onChange={() => changeValue("parks")}
+            />
+            <br></br>
+            <Checkbox
+                label="Restaurants"
+                value={() => setValue("restaurants")}
+                id="restaurants"
+                onChange={() => changeValue("restaurants")}
+            />
+            <br></br>
+            <Checkbox
+                label="Museums"
+                value={() => setValue("museums")}
+                id="museuems"
+                onChange={() => changeValue("museums")}
+            />
+            <br></br>
+            <Checkbox
+                label="Entertainment"
+                value={() => setValue("entertainment")}
+                id="entertainment"
+                onChange={() => changeValue("entertainment")}
+            />
+            <br></br>
+            <Checkbox
+                label="Housing"
+                value={() => setValue("housing")}
+                id="housing"
+                onChange={() => changeValue("housing")}
+            />
         </div>
     )
 }
 
-const Checkbox = ({label, value, onChange}) => {
+const Checkbox = ({label, onChange}) => {
     return (
         <label>
-            <input type ="checkbox" defaultChecked={false} onChange={onChange} />
+            <input type ="checkbox" defaultChecked={true} onChange={onChange} />
             {label}
         </label>
     )
