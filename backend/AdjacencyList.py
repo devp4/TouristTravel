@@ -12,10 +12,33 @@ class AdjacencyList:
 
     def __init__(self) -> None:
         self.adjacency_list = {}
-        self.ny_graph = ox.graph_from_place(
-            "New York, New York State", network_type="drive")
-        print("GRAPH LOADED")
+        self.graphs = self.create_graphs()
+        self.graph = self.graphs["NY"]
 
+    def create_graphs(self):
+        ny_graph = ox.graph_from_place(
+            "New York, New York State", network_type="drive")
+
+        # NOT WORKING CURRENTLY
+        # la_graph = ox.graph_from_place(
+        #     "Los Angeles, California", network_type="drive")
+
+        se_graph = ox.graph_from_place(
+            "Seattle, Washington", network_type="drive")
+
+        graphs = {
+            "NY": ny_graph,
+            # "LA": la_graph,
+            "SE": se_graph
+        }
+
+        print("GRAPHS LOADED")
+
+        return graphs
+    
+    def set_graph(self, city):
+        self.graph = self.graphs[city]
+    
     def create_adjacency_list(self):
         '''
         Creates Adjacency List from an OSM Graph 
@@ -160,10 +183,10 @@ class AdjacencyList:
                             distance[destination] = newKey
 
                             if a_star:
-                                x = self.ny_graph.nodes[end]['x'] - \
-                                    self.ny_graph.nodes[destination]['x']
-                                y = self.ny_graph.nodes[end]['y'] - \
-                                    self.ny_graph.nodes[destination]['y']
+                                x = self.graph.nodes[end]['x'] - \
+                                    self.graph.nodes[destination]['x']
+                                y = self.graph.nodes[end]['y'] - \
+                                    self.graph.nodes[destination]['y']
                                 heuristic = math.sqrt(
                                     math.pow(x, 2) + math.pow(y, 2)) * math.pow(10, amplifier * 5)
                                 newKey = newKey + heuristic
@@ -182,12 +205,12 @@ class AdjacencyList:
         for i in range(len(path)-1):
             pair = path[i:i+2]
             source, dest = int(pair[0]), int(pair[1])
-            geo = self.ny_graph[source][dest][0].get("geometry", None)
+            geo = self.graph[source][dest][0].get("geometry", None)
             if geo:
                 geometries.append(geo)
             else:
-                x1, y1 = self.ny_graph.nodes[source]['x'], self.ny_graph.nodes[source]['y']
-                x2, y2 = self.ny_graph.nodes[dest]['x'], self.ny_graph.nodes[dest]['y']
+                x1, y1 = self.graph.nodes[source]['x'], self.graph.nodes[source]['y']
+                x2, y2 = self.graph.nodes[dest]['x'], self.graph.nodes[dest]['y']
                 lineString = shapely.geometry.LineString([(x1, y1), (x2, y2)])
                 geometries.append(lineString)
 
