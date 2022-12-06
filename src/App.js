@@ -156,20 +156,20 @@ const App = () => {
 		<div>
 			<div className="container">
 				<h2>Options</h2>
-				<p className="amplifier-value">A* Amplifier: 
+				<p className="amplifier-value">A* Search Amplifier: 
 					<span id="amplifier-value" >{" 1"}</span>
 					<br></br>
-					<input className="amplifier-range" id="amplifier-range" type="range" min={0} max={2} step={0.1} defaultValue={1} onInput={() => change()}></input>
+					<input className="amplifier-range" id="amplifier-range" type="range" min={0} max={2} step={0.05} defaultValue={1} onInput={() => change()}></input>
 				</p>
 				<label className='show-route'>
 					<input id="dijkstra" type="checkbox" defaultChecked={showDijkstra} onChange={() => setshowDijkstra(!showDijkstra)}/>
 					{"Dijkstra"}
 					<input id="a-star" type="checkbox" defaultChecked={showA_star} onChange={() => setshowA_star(!showA_star)}/>
-					{"A*"}
+					{"A* Search"}
 				</label>
 				<p className="route-label">
-					Toggle Route 
 					<input type="checkbox" defaultChecked={viewRoute} onChange={() => setviewRoute(!viewRoute)}></input>
+					Show Route 
 				</p>
 				<Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data>
 				<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
