@@ -36,12 +36,13 @@ body {
   position:absolute;
   z-index:401;
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+  transition: all 0.2s ease-in-out 0s;
+  visibility: hidden;
 }
 
 .container.opened {
   opacity: 1;
-  transition: opacity 0.3s ease-in;
+  visibility: visible;
 }
 
 .container h2 {
@@ -50,6 +51,24 @@ body {
   margin-bottom: 1%;
   font-size: 20px;
   border-bottom: solid black 2px;
+}
+
+.city-dropdown {
+  position:absolute; 
+  z-index:500;
+  right: 0px;
+  margin: 1%;
+  margin-top: 0.5%;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  border: solid black 2px;
+  border-radius: 10px;
+}
+
+.city-dropdown:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .amplifier-value {

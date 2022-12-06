@@ -117,7 +117,6 @@ const App = () => {
 		seta_starData({"distance": [0, 0], "nodes_visited": 0, "exec_time": 0})
 		setdijkstraRoute(undefined)
 		seta_starRoute(undefined)
-
 		map.flyTo(cities[city]["coordinates"], 13, {duration: 3})
 	}
 
@@ -164,6 +163,21 @@ const App = () => {
 		}
 		
 	}
+
+	const createOptions = () => {
+		let options = []
+
+		for (const key of Object.keys(cities)) {
+			if (key === city) {
+				options.push(<option disabled selected value={key} >{key}</option>)
+			}
+			else {
+				options.push(<option>{key}</option>)
+			}
+		}
+
+		return options
+	}
 	
 	return (
 		<div>
@@ -190,7 +204,13 @@ const App = () => {
 				<Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data>
 				<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
 			</div>
-			<button className='goto' onClick={() => fly("Seattle")} type="button" data-bs-target="#exampleModal">Go To</button>
+			<select id="cities" className="city-dropdown" onChange={() => {
+					const element = document.getElementById("cities")
+					const new_city = element.options[element.selectedIndex].text
+					fly(new_city)
+				}}>
+				{createOptions()}
+  			</select>
 			<MapContainer center={cities[city]["coordinates"]} zoom={13} minZoom={11} zoomControl={false} scrollWheelZoom={true} ref={setMap}>
 				<TileLayer
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

@@ -19,15 +19,15 @@ class AdjacencyList:
         ny_graph = ox.graph_from_place(
             "New York, New York State", network_type="drive")
 
-        # ch_graph = ox.graph_from_place(
-        #     "Chicago, Illinois", network_type="drive")
+        ch_graph = ox.graph_from_place(
+            "Chicago, Illinois", network_type="drive")
 
         se_graph = ox.graph_from_place(
              "Seattle, Washington", network_type="drive")
 
         graphs = {
             "NY": ny_graph,
-            #"CH": ch_graph,
+            "CH": ch_graph,
             "SE": se_graph
         }
 
