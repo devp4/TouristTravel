@@ -19,17 +19,12 @@ class AdjacencyList:
         ny_graph = ox.graph_from_place(
             "New York, New York State", network_type="drive")
 
-        # NOT WORKING CURRENTLY
-        # la_graph = ox.graph_from_place(
-        #     "Los Angeles, California", network_type="drive")
-
-        se_graph = ox.graph_from_place(
-            "Seattle, Washington", network_type="drive")
+        # se_graph = ox.graph_from_place(
+        #     "Seattle, Washington", network_type="drive")
 
         graphs = {
             "NY": ny_graph,
-            # "LA": la_graph,
-            "SE": se_graph
+            #"SE": se_graph
         }
 
         print("GRAPHS LOADED")
@@ -71,7 +66,6 @@ class AdjacencyList:
 
         self.ny_graph = ox.graph_from_place(
             "New York, New York State", network_type="drive")
-
         for node, _ in list(self.ny_graph.nodes(data=True)):
             self.adjacency_list[node] = {}
 
@@ -100,7 +94,12 @@ class AdjacencyList:
                 f"The adjacency list for {city} does not exist")
 
         with open(fr"./data/adjacency-lists/{city}_AL.json", "r") as file:
-            self.adjacency_list = json.load(file)
+            temp = json.load(file)
+
+        for key, value in temp.items():
+            self.adjacency_list[int(key)] = {}
+            for key2, value2 in value.items():
+                self.adjacency_list[int(key)][int(key2)] = value2
 
     def print_extra(self, a_star, start, end, distance, end_time, start_time):
         alg = "Dijkstra"
@@ -125,17 +124,6 @@ class AdjacencyList:
         return self.store_shortest_path(parents[currentVertex], parents, path)
 
     def dijkstra_algorithm(self, start, end, a_star, amplifier):
-        '''
-        args: start is starting node, end is destination node,
-          a_star: True for A* and False for Dijkstra,
-          amplifier (A* only): default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time,
-
-        returns dictionary 
-            path: external list filled with the nodes visited in the shortest path from start to end,
-            nodes_visited: number of nodes visited,
-            distance: total distance in km [0], total distance in miles [1]
-            exec_time: algorithm execution time
-        '''
         end_time = 0
         start_time = timer()
         visited = {start: False}

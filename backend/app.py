@@ -7,13 +7,20 @@ adj_list = AdjacencyList()
 
 @app.route("/api/dijkstra", methods=["POST"])
 def dijkstra():
-    nodes = request.get_json()["nodes"]
-    data = adj_list.dijkstra_algorithm(nodes[0], nodes[1], False, 0)
+    body = request.get_json()
+    nodes = list(map(int, body["nodes"]))
+    algorithm = body["algorithm"]
+    amp = body["amplifier"]
+
+    a_star = True if algorithm == "a-star" else False
+    amplifier = float(amp) if amp else 0
+
+    data = adj_list.dijkstra_algorithm(nodes[0], nodes[1], a_star, amplifier)
 
     if len(nodes) > 2:
         for i in range(1, len(nodes)-1): 
             pair = nodes[i:i+2]
-            res = adj_list.dijkstra_algorithm(pair[0], pair[1], False, 0)
+            res = adj_list.dijkstra_algorithm(pair[0], pair[1], a_star, amplifier)
 
             data["path"].extend(res["path"][1:])
             data["exec_time"] += res["exec_time"]

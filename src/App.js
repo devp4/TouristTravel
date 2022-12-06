@@ -1,9 +1,10 @@
 import './App.css';
-import { MapContainer, TileLayer, ZoomControl, GeoJSON } from 'react-leaflet'
+import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet'
 import cities from "./cities/cities"
 import { useEffect, useState } from 'react';
 import MarkerPopup from './components/MarkerPopup';
 import SideBar from './components/SideBar';
+import Data from './components/Data';
 
 const App = () => {
 
@@ -82,7 +83,15 @@ const App = () => {
 		}
 
 		// When length of route is > 2, find shortest path between nodes
-		const response = getPath({nodes: nodes})
+		
+		// Get options
+		let algorithm = "dijkstra"
+		if (document.getElementById("a-star").checked) {
+			algorithm = "a-star"
+		}
+		let amplifier = document.getElementById("amplifier-range").value
+		
+		const response = getPath({nodes: nodes, algorithm: algorithm, amplifier: amplifier})
 
 		// Set response data to resepective states
 		response.then((response) => response.json()).then((data) => {
@@ -104,9 +113,42 @@ const App = () => {
 
 		map.flyTo(cities[city]["coordinates"], 13, {duration: 3})
 	}
+
+	const change = () => {
+		const slider = document.getElementById("amplifier-range")
+		const label = document.getElementById("amplifier-value")
+		label.innerHTML = slider.value
+	}
+
+	const checkboxChange = (id) => {
+		document.getElementById(id).checked = true
+		
+		if (id === "a-star") {
+			document.getElementById(id).disabled = false
+			document.getElementById("dijkstra").disabled = true
+		}
+
+		if (id === "dijkstra") {
+			document.getElementById(id).disabled = false
+			document.getElementById("a-star").disabled = true
+		}
+	}
 	
 	return (
 		<div>
+			<Data data={data}></Data>
+			<div className='goto-div'>
+				<label>
+					<input id="dijkstra" type ="checkbox" defaultChecked={true} onChange={() => checkboxChange("a-star")}/>
+					{"Dijkstra"}
+					<input id="a-star" type ="checkbox" defaultChecked={false} disabled={true} onChange={() => checkboxChange("dijkstra")}/>
+					{"A*"}
+        		</label>
+				<input id="amplifier-range" type="range" min={0} max={1} step={0.1} defaultValue={0.5} onInput={() => change()}></input>
+				<p>Amplifier: <span id="amplifier-value" >{"0.5"}</span></p>
+			</div>	
+			<button className='goto' onClick={() => fly("Seattle")} type="button" data-bs-target="#exampleModal">Go To</button>
+			<div class="modal fade fixed top-0" id="exampleModal"></div>
 			<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
 			<MapContainer center={cities[city]["coordinates"]} zoom={13} minZoom={11} zoomControl={false} scrollWheelZoom={true} ref={setMap}>
 				<TileLayer

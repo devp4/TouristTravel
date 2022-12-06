@@ -1,10 +1,7 @@
 import AdjacencyList
 
-list = AdjacencyList.AdjacencyList()
-list.create_adjacency_list()
+x = AdjacencyList.AdjacencyList()
+x.load_adjacency_list("NY")
 
-dj = list.dijkstra_algorithm(39076461, 597414803, False, 0)
-print(dj)
-
-ast = list.dijkstra_algorithm(39076461, 597414803, True, 1)
+ast = x.dijkstra_algorithm(1061531500, 42433550, True, 0.5)
 print(ast)
