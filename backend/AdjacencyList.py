@@ -124,6 +124,16 @@ class AdjacencyList:
         return self.store_shortest_path(parents[currentVertex], parents, path)
 
     def dijkstra_algorithm(self, start, end, a_star, amplifier):
+        '''
+        args: start is starting node, end is destination node,
+          a_star: True for A* and False for Dijkstra,
+          amplifier (A* only): default is 1, increasing results in less accuracy and less nodes visited w/ lower execution time,
+        returns dictionary 
+            path: external list filled with the nodes visited in the shortest path from start to end,
+            nodes_visited: number of nodes visited,
+            distance: total distance in km [0], total distance in miles [1]
+            exec_time: algorithm execution time
+        '''
         end_time = 0
         start_time = timer()
         visited = {start: False}
