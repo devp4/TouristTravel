@@ -18,25 +18,15 @@ body {
   position:absolute;
   z-index:401;
   top: 0;
+  left: 20px;
 }
 
 .LeftSideBar h2{
-  margin-left:5%;
+  margin-left:13%;
   margin-top: 1%;
   margin-bottom: 2%;
   font-size:2vw;
-}
-
-.RightSideBar {
-  border-radius: 30px;
-  height: 25%;
-  min-height: 200px;
-  margin: 0.5%;
-  width: 10%;
-  background-color: rgba(255,255,255,.75);
-  position:absolute;
-  z-index:401;
-  top: 0;
+  right: 20px;
 }
 
 .goto-div {
@@ -44,22 +34,38 @@ body {
   position:absolute; 
   z-index:401;
   max-width: 200px;
+  right:20px;
 }
 
 .data-div {
-  background-color: white;
+  padding: 30px 0;
+  border-radius: 30px;
+  background-color: rgba(255,255,255,.75);
   position:absolute; 
   z-index:401;
   max-width: 200px;
-  margin-left: 70%;
-  margin-top: 20%;
+  top:500px;
+  left: 20px;
   width: 200px;
-  height: 250px;
+  height: 300px;
+}
+
+.data-div h2 {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size:1.2vw;
+}
+
+.data-div h4 {
+  text-align: center;
+  font-size:0.6vw;
 }
 
 .goto {
   position:absolute; 
   z-index:500;
+  right:20px;
 }
 
 .leaflet-container {
@@ -72,6 +78,7 @@ body {
   z-index:700;
   background-color: red;
   margin-top: 10%;
+  left: 20px;
 }
 
 input[type=checkbox] {

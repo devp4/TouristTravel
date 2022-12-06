@@ -22,13 +22,13 @@ class AdjacencyList:
         # ch_graph = ox.graph_from_place(
         #     "Chicago, Illinois", network_type="drive")
 
-        # se_graph = ox.graph_from_place(
-        #     "Seattle, Washington", network_type="drive")
+        se_graph = ox.graph_from_place(
+             "Seattle, Washington", network_type="drive")
 
         graphs = {
             "NY": ny_graph,
             #"CH": ch_graph,
-            #"SE": se_graph
+            "SE": se_graph
         }
 
         print("GRAPHS LOADED")
@@ -200,7 +200,7 @@ class AdjacencyList:
         km = distance[end] / 1000
         miles = km * 0.6213711922
 
-        return {"path": self.store_shortest_path(end, parents, []), "exec_time": round(end_time - start_time, 4), "nodes_visited": len(distance), "distance": [round(km, 2), round(miles, 2)]}
+        return {"path": self.store_shortest_path(end, parents, []), "exec_time": round((end_time - start_time) * 1000, 1), "nodes_visited": len(distance), "distance": [round(km, 2), round(miles, 2)]}
 
     def getGeoJSON(self, path):
         geometries = []
