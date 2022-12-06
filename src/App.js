@@ -8,16 +8,6 @@ import Data from './components/Data';
 import Modal from './components/Modal';
 
 const App = () => {
-  const [markers, setMarkers] = useState({});
-  const [viewMarkers, setviewMarkers] = useState([
-    "tourism",
-    "parks",
-    "entertainment",
-    "museums",
-    "housing",
-    "restaurants",
-  ]);
-
 
 	const [markers, setMarkers] = useState({})
 	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "museums", "housing", "restaurants"])
