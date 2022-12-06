@@ -22,7 +22,7 @@ const Data = ({ dijkstra_data, a_star_data }) => {
                         <td className='row-text'>{a_star_data["nodes_visited"]}</td>
                     </tr>
                     <tr className='row'>
-                        <th className='header-col'>Execution Time</th>
+                        <th className='header-col'>Execution Time (ms)</th>
                         <td className='row-text'>{dijkstra_data["exec_time"]}</td>
                         <td className='row-text'>{a_star_data["exec_time"]}</td>
                     </tr>

@@ -11,7 +11,7 @@ const App = () => {
 
 	const [markers, setMarkers] = useState({})
 	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "museums", "housing", "restaurants"])
-	
+	const [viewRoute, setviewRoute] = useState(false)
 	const [nodes, setNodes] = useState([])
 
 	const [dijkstraData, setdijkstraData] = useState({"distance": [0, 0], "nodes_visited": 0, "exec_time": 0})
@@ -125,20 +125,52 @@ const App = () => {
 	const change = () => {
 		const slider = document.getElementById("amplifier-range")
 		const label = document.getElementById("amplifier-value")
-		label.innerHTML = slider.value
+		label.innerHTML = " " + slider.value
+	}
+
+	const displayRoute = () => {
+		let temp_markers = []
+
+		if (viewRoute) { 
+			for (const feature of viewMarkers) {
+				for (const marker of markers[feature]) {
+					if (nodes.includes(marker["node"])) {
+						temp_markers.push(<MarkerPopup marker={marker} nodes={nodes} setNodes={setNodes}></MarkerPopup>)
+					}
+				}
+			}
+		}
+
+		else {
+			for (const feature of viewMarkers) {
+				for (const marker of markers[feature]) {
+					temp_markers.push(<MarkerPopup marker={marker} nodes={nodes} setNodes={setNodes}></MarkerPopup>)
+				}
+			}
+		}
+
+		return temp_markers
 	}
 	
 	return (
 		<div>
 			<div className="container">
 				<h2>Options</h2>
-				<p className="amplifier-value">A* Amplifier: <span id="amplifier-value" >{"1"}</span><br></br><input className="amplifier-range" id="amplifier-range" type="range" min={0} max={2} step={0.1} defaultValue={1} onInput={() => change()}></input></p>
+				<p className="amplifier-value">A* Amplifier: 
+					<span id="amplifier-value" >{" 1"}</span>
+					<br></br>
+					<input className="amplifier-range" id="amplifier-range" type="range" min={0} max={2} step={0.1} defaultValue={1} onInput={() => change()}></input>
+				</p>
 				<label className='show-route'>
 					<input id="dijkstra" type="checkbox" defaultChecked={showDijkstra} onChange={() => setshowDijkstra(!showDijkstra)}/>
 					{"Dijkstra"}
 					<input id="a-star" type="checkbox" defaultChecked={showA_star} onChange={() => setshowA_star(!showA_star)}/>
 					{"A*"}
 				</label>
+				<p className="route-label">
+					Toggle Route 
+					<input type="checkbox" defaultChecked={viewRoute} onChange={() => setviewRoute(!viewRoute)}></input>
+				</p>
 				<Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data>
 				<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
 			</div>
@@ -148,9 +180,7 @@ const App = () => {
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
-				{viewMarkers ? viewMarkers.map((feature) =>
-					markers[feature] ? markers[feature].map((marker) => 
-						<MarkerPopup marker={marker} nodes={nodes} setNodes={setNodes}></MarkerPopup>): null) : null}
+				{Object.keys(markers).length !== 0 ? displayRoute() : null}
 				{dijkstraRoute && showDijkstra ? <GeoJSON key={geoLayer} data={dijkstraRoute["features"]}></GeoJSON> : null}
 				{a_starRoute && showA_star ? <GeoJSON key={geoLayer + 1} data={a_starRoute["features"]} color="red"></GeoJSON> : null}
 			</MapContainer>
