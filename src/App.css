@@ -28,10 +28,15 @@ body {
 }
 
 .RightSideBar {
-  position:absolute; 
+  border-radius: 30px;
+  height: 25%;
+  min-height: 200px;
+  margin: 0.5%;
+  width: 10%;
+  background-color: rgba(255,255,255,.75);
+  position:absolute;
   z-index:401;
-  left:20px;
-  top:20px;
+  top: 0;
 }
 
 .goto-div {
