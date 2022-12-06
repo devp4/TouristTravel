@@ -9,34 +9,36 @@ body {
 }
 
 .LeftSideBar {
-  border-radius: 20px;
+  border-radius: 30px;
   height: 25%;
   min-height: 200px;
   margin: 0.5%;
-  width: 15%;
-  background-color: rgba(255,255,255,.9);
-  position:absolute; 
+  width: 10%;
+  background-color: rgba(255,255,255,.75);
+  position:absolute;
   z-index:401;
   top: 0;
-  border: solid 3px black;
 }
 
 .LeftSideBar h2{
   margin-left:5%;
   margin-top: 1%;
   margin-bottom: 2%;
-  font-size:30px;
+  font-size:2vw;
 }
 
+.RightSideBar {
+  position:absolute; 
+  z-index:401;
+  left:20px;
+  top:20px;
+}
 
 .goto-div {
   background-color: white;
   position:absolute; 
   z-index:401;
   max-width: 200px;
-  margin-left: 70%;
-  margin-top: 10%;
-  width: 200px;
 }
 
 .data-div {
@@ -53,13 +55,6 @@ body {
 .goto {
   position:absolute; 
   z-index:500;
-  background-color: white;
-  width: 70px;
-  text-align: center;
-  border-radius: 30px;
-  border: solid black 3px;
-  margin-top: 1%;
-  margin-left: 94%;
 }
 
 .leaflet-container {

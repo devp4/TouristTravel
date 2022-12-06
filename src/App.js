@@ -8,6 +8,16 @@ import Data from './components/Data';
 import Modal from './components/Modal';
 
 const App = () => {
+  const [markers, setMarkers] = useState({});
+  const [viewMarkers, setviewMarkers] = useState([
+    "tourism",
+    "parks",
+    "entertainment",
+    "museums",
+    "housing",
+    "restaurants",
+  ]);
+
 
 	const [markers, setMarkers] = useState({})
 	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "museums", "housing", "restaurants"])
@@ -154,7 +164,6 @@ const App = () => {
 				<p>Amplifier: <span id="amplifier-value" >{"1"}</span></p>
 			</div>	
 			<button className='goto' onClick={() => fly("Seattle")} type="button" data-bs-target="#exampleModal">Go To</button>
-			<div class="modal fade fixed top-0" id="exampleModal"></div>
 			<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
 			<MapContainer center={cities[city]["coordinates"]} zoom={13} minZoom={11} zoomControl={false} scrollWheelZoom={true} ref={setMap}>
 				<TileLayer
