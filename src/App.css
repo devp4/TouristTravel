@@ -8,25 +8,41 @@ body {
   padding: 0;
 }
 
-.LeftSideBar {
-  border-radius: 30px;
-  height: 25%;
-  min-height: 200px;
-  margin: 0.5%;
-  width: 10%;
-  background-color: rgba(255,255,255,.75);
-  position:absolute;
-  z-index:401;
-  top: 0;
-  left: 20px;
+.leaflet-container {
+  height: 100vh; 
+  width: 100vw;
 }
 
-.LeftSideBar h2{
-  margin-left:13%;
+.container {
+  border-radius: 30px;
+  margin: 1%;
+  width: 10%;
+  background-color: rgba(255,255,255,.9);
+  border: solid black 2px;
+  height: 700px;
+  width: 300px;
+  position:absolute;
+  z-index:401;
+}
+
+.container h2 {
+  text-align: center;
   margin-top: 1%;
-  margin-bottom: 2%;
-  font-size:2vw;
-  right: 20px;
+  margin-bottom: 1%;
+  font-size: 20px;
+  border-bottom: solid black 2px;
+}
+
+.amplifier-value {
+  margin-top: 2%;
+  margin-left: 4%;
+  padding-right: 20px;
+  margin-bottom: 4%;
+}
+
+.show-route {
+  margin-bottom: 3%;
+  font-size: 15px;
 }
 
 .goto-div {
@@ -37,40 +53,42 @@ body {
   right:20px;
 }
 
-.data-div {
-  padding: 30px 0;
-  border-radius: 30px;
-  background-color: rgba(255,255,255,.75);
-  position:absolute; 
-  z-index:401;
-  max-width: 200px;
-  top:500px;
-  left: 20px;
-  width: 200px;
-  height: 300px;
+
+.header-col {
+  max-width: 100px;
+  padding-bottom: 10px;
+  padding-right: 15px;
 }
 
-.data-div h2 {
-  text-align: center;
-  margin-top: 1%;
-  margin-bottom: 2%;
-  font-size:1.2vw;
+.header-row {
+  max-width: 100px;
+  width: 100px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  padding-top: 5px;
 }
 
-.data-div h4 {
-  text-align: center;
-  font-size:0.6vw;
+.row-text {
+  padding-bottom: 15px;
+}
+
+.table {
+  width: 300px;
+}
+
+.features {
+  margin-top: 3%;
+}
+
+.feature-label {
+  font-size: 16px;
+  margin-left: 2%;
 }
 
 .goto {
   position:absolute; 
   z-index:500;
   right:20px;
-}
-
-.leaflet-container {
-  height: 100vh; 
-  width: 100vw;
 }
 
 .modal {

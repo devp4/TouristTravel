@@ -14,10 +14,12 @@ const App = () => {
 	
 	const [nodes, setNodes] = useState([])
 
-	const [dijkstraData, setdijkstraData] = useState(undefined)
-	const [a_starData, seta_starData] = useState(undefined)
+	const [dijkstraData, setdijkstraData] = useState({"distance": [0, 0], "nodes_visited": 0, "exec_time": 0})
+	const [a_starData, seta_starData] = useState({"distance": [0, 0], "nodes_visited": 0, "exec_time": 0})
 	const [dijkstraRoute, setdijkstraRoute] = useState(undefined)
 	const [a_starRoute, seta_starRoute] = useState(undefined)
+	const [showDijkstra, setshowDijkstra] = useState(true)
+	const [showA_star, setshowA_star] = useState(true)
 
 	const [geoLayer, setgeoLayer] = useState(1)
 	const [city, setCity] = useState("New York")
@@ -81,8 +83,8 @@ const App = () => {
 
 	useEffect(() => {
 		if (nodes.length < 2) {
-			setdijkstraData(undefined)
-			seta_starData(undefined)
+			setdijkstraData({"distance": [0, 0], "nodes_visited": 0, "exec_time": 0})
+			seta_starData({"distance": [0, 0], "nodes_visited": 0, "exec_time": 0})
 			setdijkstraRoute(undefined)
 			seta_starRoute(undefined)
 			return
@@ -112,8 +114,8 @@ const App = () => {
 
 		// Reset State
 		setNodes([])
-		setdijkstraData(undefined)
-		seta_starData(undefined)
+		setdijkstraData({"distance": [0, 0], "nodes_visited": 0, "exec_time": 0})
+		seta_starData({"distance": [0, 0], "nodes_visited": 0, "exec_time": 0})
 		setdijkstraRoute(undefined)
 		seta_starRoute(undefined)
 
@@ -125,37 +127,22 @@ const App = () => {
 		const label = document.getElementById("amplifier-value")
 		label.innerHTML = slider.value
 	}
-
-	const checkboxChange = (id) => {
-		document.getElementById(id).checked = true
-		
-		if (id === "a-star") {
-			document.getElementById(id).disabled = false
-			document.getElementById("dijkstra").disabled = true
-		}
-
-		if (id === "dijkstra") {
-			document.getElementById(id).disabled = false
-			document.getElementById("a-star").disabled = true
-		}
-	}
 	
 	return (
 		<div>
-			{dijkstraData && a_starData ? <Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data> : null}
-			<div className='goto-div'>
-				<label>
-					<input id="dijkstra" type ="checkbox" defaultChecked={true} onChange={() => checkboxChange("a-star")}/>
+			<div className="container">
+				<h2>Options</h2>
+				<p className="amplifier-value">A* Amplifier: <span id="amplifier-value" >{"1"}</span><br></br><input className="amplifier-range" id="amplifier-range" type="range" min={0} max={2} step={0.1} defaultValue={1} onInput={() => change()}></input></p>
+				<label className='show-route'>
+					<input id="dijkstra" type="checkbox" defaultChecked={showDijkstra} onChange={() => setshowDijkstra(!showDijkstra)}/>
 					{"Dijkstra"}
-					<input id="a-star" type ="checkbox" defaultChecked={false} disabled={true} onChange={() => checkboxChange("dijkstra")}/>
+					<input id="a-star" type="checkbox" defaultChecked={showA_star} onChange={() => setshowA_star(!showA_star)}/>
 					{"A*"}
-        		</label>
-				<input id="amplifier-range" type="range" min={0} max={2} step={0.1} defaultValue={1} onInput={() => change()}></input>
-				<p>Amplifier: <span id="amplifier-value" >{"1"}</span></p>
-			</div>	
+				</label>
+				<Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data>
+				<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
+			</div>
 			<button className='goto' onClick={() => fly("Seattle")} type="button" data-bs-target="#exampleModal">Go To</button>
-
-			<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
 			<MapContainer center={cities[city]["coordinates"]} zoom={13} minZoom={11} zoomControl={false} scrollWheelZoom={true} ref={setMap}>
 				<TileLayer
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -164,8 +151,8 @@ const App = () => {
 				{viewMarkers ? viewMarkers.map((feature) =>
 					markers[feature] ? markers[feature].map((marker) => 
 						<MarkerPopup marker={marker} nodes={nodes} setNodes={setNodes}></MarkerPopup>): null) : null}
-				{dijkstraRoute ? <GeoJSON key={geoLayer} data={dijkstraRoute["features"]}></GeoJSON> : null}
-				{a_starRoute ? <GeoJSON key={geoLayer + 1} data={a_starRoute["features"]} color="red"></GeoJSON> : null}
+				{dijkstraRoute && showDijkstra ? <GeoJSON key={geoLayer} data={dijkstraRoute["features"]}></GeoJSON> : null}
+				{a_starRoute && showA_star ? <GeoJSON key={geoLayer + 1} data={a_starRoute["features"]} color="red"></GeoJSON> : null}
 			</MapContainer>
 		</div>
 	);

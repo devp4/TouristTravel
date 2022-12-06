@@ -20,52 +20,54 @@ const SideBar = ({ viewMarkers, setviewMarkers }) => {
     }
 
     return (
-        <div className="LeftSideBar">
+        <div>
             <h2>Features</h2>
-            <Checkbox
-                label="Tourist Attractions"
-                id="toursim"
-                value={() => setValue("tourism")}
-                onChange={() => changeValue("tourism")}
-            />
-            <Checkbox
-                label="Parks"
-                value={() => setValue("parks")}
-                id="parks"
-                onChange={() => changeValue("parks")}
-            />
-            <Checkbox
-                label="Restaurants"
-                value={() => setValue("restaurants")}
-                id="restaurants"
-                onChange={() => changeValue("restaurants")}
-            />
-            <Checkbox
-                label="Museums"
-                value={() => setValue("museums")}
-                id="museuems"
-                onChange={() => changeValue("museums")}
-            />
-            <Checkbox
-                label="Entertainment"
-                value={() => setValue("entertainment")}
-                id="entertainment"
-                onChange={() => changeValue("entertainment")}
-            />
-            <Checkbox
-                label="Housing"
-                value={() => setValue("housing")}
-                id="housing"
-                onChange={() => changeValue("housing")}
-            />
+            <div className="features">
+                <Checkbox
+                    label="Tourist Attractions"
+                    id="toursim"
+                    value={() => setValue("tourism")}
+                    onChange={() => changeValue("tourism")}
+                />
+                <Checkbox
+                    label="Parks"
+                    value={() => setValue("parks")}
+                    id="parks"
+                    onChange={() => changeValue("parks")}
+                />
+                <Checkbox
+                    label="Restaurants"
+                    value={() => setValue("restaurants")}
+                    id="restaurants"
+                    onChange={() => changeValue("restaurants")}
+                />
+                <Checkbox
+                    label="Museums"
+                    value={() => setValue("museums")}
+                    id="museuems"
+                    onChange={() => changeValue("museums")}
+                />
+                <Checkbox
+                    label="Entertainment"
+                    value={() => setValue("entertainment")}
+                    id="entertainment"
+                    onChange={() => changeValue("entertainment")}
+                />
+                <Checkbox
+                    label="Housing"
+                    value={() => setValue("housing")}
+                    id="housing"
+                    onChange={() => changeValue("housing")}
+                />
+            </div>
         </div>
     )
 }
 
 const Checkbox = ({label, onChange}) => {
     return (
-        <label>
-            <input type ="checkbox" defaultChecked={true} onChange={onChange} />
+        <label className="feature-label">
+            <input className="feature-checkbox" type ="checkbox" defaultChecked={true} onChange={onChange} />
             {label}
         </label>
     )
