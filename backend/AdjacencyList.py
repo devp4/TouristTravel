@@ -30,10 +30,10 @@ class AdjacencyList:
         print("GRAPHS LOADED")
 
         return graphs
-    
+
     def set_graph(self, city):
         self.graph = self.graphs[city]
-    
+
     def create_adjacency_list(self):
         '''
         Creates Adjacency List from an OSM Graph 
