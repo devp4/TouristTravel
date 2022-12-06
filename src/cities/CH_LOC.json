@@ -1,0 +1,1418 @@
+{
+    "tourism": [
+        {
+            "name": "Cloud Gate (The Bean)",
+            "address": "Cloud Gate (The Bean), AT&T Plaza, Chicago, IL, United States of America",
+            "coordinates": [
+                -87.62333989088094,
+                41.882681250000005
+            ],
+            "node": "27446495"
+        },
+        {
+            "name": "Buckingham Fountain",
+            "address": "Clarence Buckingham Memorial Fountain, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.61897180355183,
+                41.875802
+            ],
+            "node": "740237201"
+        },
+        {
+            "name": "Alexander Von Humboldt Monument",
+            "address": "Alexander Von Humboldt Monument, North Humboldt Drive, Chicago, IL 60622, United States of America",
+            "coordinates": [
+                -87.70146623681973,
+                41.90547135
+            ],
+            "node": "261214695"
+        },
+        {
+            "name": "Fritz Reuter Monument",
+            "address": "Fritz Reuter Monument, North Humboldt Drive, Chicago, IL 60622, United States of America",
+            "coordinates": [
+                -87.70196309950005,
+                41.9038231
+            ],
+            "node": "261214695"
+        },
+        {
+            "name": "Leif Ericsson Monument",
+            "address": "Leif Ericsson Monument, North Humboldt Drive, Chicago, IL 60622, United States of America",
+            "coordinates": [
+                -87.70157157411111,
+                41.90671535
+            ],
+            "node": "261214665"
+        },
+        {
+            "name": "Equestrian Indians (The Spearman)",
+            "address": "Equestrian Indians (The Spearman), East Ida B. Wells Drive, Chicago, IL 60604, United States of America",
+            "coordinates": [
+                -87.62349133642184,
+                41.875499250000004
+            ],
+            "node": "2787305648"
+        },
+        {
+            "name": "Equestrian Indians (The Bowman)",
+            "address": "Equestrian Indians (The Bowman), East Ida B. Wells Drive, Chicago, IL 60604, United States of America",
+            "coordinates": [
+                -87.62350760000001,
+                41.87597815
+            ],
+            "node": "27440242"
+        },
+        {
+            "name": "Johann Christoph Friedrich von Schiller Monument",
+            "address": "Johann Christoph Friedrich von Schiller Monument, West Webster Avenue, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.63519020000001,
+                41.922011
+            ],
+            "node": "258964872"
+        },
+        {
+            "name": "William Shakespeare Monument",
+            "address": "William Shakespeare Monument, North Lincoln Park West, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.63620885098678,
+                41.9238305
+            ],
+            "node": "261142619"
+        },
+        {
+            "name": "General Philip Henry Sheridan Monument",
+            "address": "General Philip Henry Sheridan Monument, North Lake Shore Drive West, Chicago, IL 60657, United States of America",
+            "coordinates": [
+                -87.6392375,
+                41.9404579
+            ],
+            "node": "250278972"
+        },
+        {
+            "name": "Johann Wolfgang von Goethe Monument",
+            "address": "Johann Wolfgang von Goethe Monument, North Cannon Drive, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.638624,
+                41.9325964
+            ],
+            "node": "26099533"
+        },
+        {
+            "name": "Alexander Hamilton Monument",
+            "address": "Alexander Hamilton Monument, North Cannon Drive, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.6384403,
+                41.9317121
+            ],
+            "node": "26099533"
+        },
+        {
+            "name": "John Peter Altgeld Momument",
+            "address": "John Peter Altgeld Momument, North Cannon Drive, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.6375291,
+                41.932189
+            ],
+            "node": "259578524"
+        },
+        {
+            "name": "Benjamin Franklin",
+            "address": "Benjamin Franklin, West LaSalle Drive, Chicago, IL 60610, United States of America",
+            "coordinates": [
+                -87.63110664874462,
+                41.913800800000004
+            ],
+            "node": "250755850"
+        },
+        {
+            "name": "A Signal of Peace",
+            "address": "A Signal of Peace, Lakefront Trail (foot), Chicago, IL 60657, United States of America",
+            "coordinates": [
+                -87.6314027,
+                41.9331913
+            ],
+            "node": "259383173"
+        },
+        {
+            "name": "Christopher Columbus Memorial",
+            "address": "Christopher Columbus Memorial, East Roosevelt Road, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.6196474,
+                41.867952
+            ],
+            "node": "5911252695"
+        },
+        {
+            "name": "360 Chicago",
+            "address": "360 Chicago, 875 North Michigan Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.6231363,
+                41.8986016
+            ],
+            "node": "27440480"
+        },
+        {
+            "name": "SkyDeck Chicago Willis Tower",
+            "address": "SkyDeck Chicago Willis Tower, South Wacker Drive, Chicago, IL 60606, United States of America",
+            "coordinates": [
+                -87.6358852,
+                41.8786383
+            ],
+            "node": "27440212"
+        },
+        {
+            "name": "Hans Christian Andersen Monument",
+            "address": "Hans Christian Andersen Monument, North Stockton Drive, Chicago, IL 60610, United States of America",
+            "coordinates": [
+                -87.634664,
+                41.9196016
+            ],
+            "node": "258964870"
+        },
+        {
+            "name": "America's Courtyard",
+            "address": "America's Courtyard, East Solidarity Drive, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.6065703,
+                41.8656406
+            ],
+            "node": "258291823"
+        },
+        {
+            "name": "Carter Harrison Memorial",
+            "address": "Carter Harrison Memorial, West Washington Boulevard, Chicago, IL 60644, United States of America",
+            "coordinates": [
+                -87.6659106,
+                41.8831757
+            ],
+            "node": "4403665396"
+        },
+        {
+            "name": "James Connolly Monument",
+            "address": "James Connolly Monument, North Ashland Avenue, Chicago, IL 60607, United States of America",
+            "coordinates": [
+                -87.6665243,
+                41.8826558
+            ],
+            "node": "261282562"
+        },
+        {
+            "name": "Sir Georg Solti Bust",
+            "address": "Sir Georg Solti Bust, South Michigan Avenue, Chicago, IL 60604, United States of America",
+            "coordinates": [
+                -87.6236505,
+                41.8778711
+            ],
+            "node": "27440218"
+        },
+        {
+            "name": "Greene Vardiman Black",
+            "address": "Greene Vardiman Black, East North Boulevard, Chicago, IL 60610, United States of America",
+            "coordinates": [
+                -87.6276654,
+                41.9113577
+            ],
+            "node": "261229891"
+        },
+        {
+            "name": "Richard Oglesby Monument",
+            "address": "Richard Oglesby Monument, North Cannon Drive, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.6370685,
+                41.9303454
+            ],
+            "node": "26099532"
+        },
+        {
+            "name": "The Alarm",
+            "address": "The Alarm, Lakefront Trail (foot), Chicago, IL 60657, United States of America",
+            "coordinates": [
+                -87.6325293,
+                41.9362619
+            ],
+            "node": "259383177"
+        },
+        {
+            "name": "Emanuel Swedenborg Monument",
+            "address": "Emanuel Swedenborg Monument, North Jean Baptiste Point DuSable Lake Shore Drive, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.6316845,
+                41.9314632
+            ],
+            "node": "258487701"
+        },
+        {
+            "name": "Doctor Jos\u00e9 Rizal Monument",
+            "address": "Doctor Jos\u00e9 Rizal Monument, North Jean Baptiste Point DuSable Lake Shore Drive, Chicago, IL 60640, United States of America",
+            "coordinates": [
+                -87.6482118,
+                41.9671593
+            ],
+            "node": "271135091"
+        },
+        {
+            "name": "Wendella Boat Rides",
+            "address": "Wendella Boat Rides, 400 North Michigan Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.6255779,
+                41.889157
+            ],
+            "node": "261149250"
+        },
+        {
+            "name": "Christopher Columbus Monument",
+            "address": "Christopher Columbus Monument, South Loomis Street, Chicago, IL 60608, United States of America",
+            "coordinates": [
+                -87.6613625,
+                41.87172
+            ],
+            "node": "1309581919"
+        },
+        {
+            "name": "George Wellington \"Cap'n\" Streeter",
+            "address": "George Wellington \"Cap'n\" Streeter, North McClurg Court, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.6178059,
+                41.8920805
+            ],
+            "node": "736862196"
+        },
+        {
+            "name": "The Escape Game Chicago",
+            "address": "The Escape Game Chicago, 42 East Ontario Street, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.6265912,
+                41.8934081
+            ],
+            "node": "258965973"
+        },
+        {
+            "name": "Agora",
+            "address": "Agora, South Michigan Avenue, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.62340429579257,
+                41.868249750000004
+            ],
+            "node": "4334657995"
+        },
+        {
+            "name": "World's Fair Bison",
+            "address": "World's Fair Bison, North Humboldt Drive, Chicago, IL 60622, United States of America",
+            "coordinates": [
+                -87.70249710565217,
+                41.90374065
+            ],
+            "node": "261214695"
+        },
+        {
+            "name": "Navy Pier",
+            "address": "Navy Pier, 600 East Grand Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.60414466382959,
+                41.89179985
+            ],
+            "node": "6939644045"
+        },
+        {
+            "name": "Byline Bank Aragon Ballroom",
+            "address": "Byline Bank Aragon Ballroom, 1106 West Lawrence Avenue, Chicago, IL 60640, United States of America",
+            "coordinates": [
+                -87.65802597464223,
+                41.969431150000005
+            ],
+            "node": "3921165860"
+        },
+        {
+            "name": "Doane Observatory",
+            "address": "Doane Observatory, East Solidarity Drive, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.60591168840782,
+                41.866377
+            ],
+            "node": "258291830"
+        },
+        {
+            "name": "Chicago Picasso",
+            "address": "Chicago Picasso, Daley Plaza, Chicago, IL, United States of America",
+            "coordinates": [
+                -87.62996645,
+                41.88361405
+            ],
+            "node": "28290277"
+        },
+        {
+            "name": "Frederick C. Robie House",
+            "address": "Frederick C. Robie House, 5757 South Woodlawn Avenue, Chicago, IL 60637, United States of America",
+            "coordinates": [
+                -87.59599401211139,
+                41.789789299999995
+            ],
+            "node": "261139504"
+        },
+        {
+            "name": "Fountain of Time",
+            "address": "Fountain of Time, South Russel Drive, Chicago, IL 60637, United States of America",
+            "coordinates": [
+                -87.60764203720552,
+                41.786754599999995
+            ],
+            "node": "261202624"
+        },
+        {
+            "name": "Miro's Chicago",
+            "address": "Miro's Chicago, West Washington Street, Chicago, IL 60602, United States of America",
+            "coordinates": [
+                -87.6303621,
+                41.88305925
+            ],
+            "node": "28290281"
+        },
+        {
+            "name": "Monument With Standing Beast",
+            "address": "Monument With Standing Beast, Pedway, Chicago, IL 60696, United States of America",
+            "coordinates": [
+                -87.63118871421568,
+                41.884734
+            ],
+            "node": "28290286"
+        },
+        {
+            "name": "Four Seasons",
+            "address": "Four Seasons, Exelon Plaza, Chicago, IL, United States of America",
+            "coordinates": [
+                -87.6297677,
+                41.8810852
+            ],
+            "node": "28289857"
+        },
+        {
+            "name": "Columbia Yacht Club (Q.S.M.V. Abegweit)",
+            "address": "Columbia Yacht Club (Q.S.M.V. Abegweit), 111 North Lake Shore Drive, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.61198051840879,
+                41.88393885000001
+            ],
+            "node": "271149712"
+        },
+        {
+            "name": "Illinois Centennial Monument",
+            "address": "Illinois Centennial Monument, West Logan Boulevard, Chicago, IL 60647, United States of America",
+            "coordinates": [
+                -87.70732294487672,
+                41.928344550000006
+            ],
+            "node": "369650596"
+        },
+        {
+            "name": "Giuseppe Garibaldi Monument",
+            "address": "Giuseppe Garibaldi Monument, West Polk Street, Chicago, IL 60607, United States of America",
+            "coordinates": [
+                -87.66530512462938,
+                41.87259085
+            ],
+            "node": "261136301"
+        },
+        {
+            "name": "Chicago Stock Exchange Arch",
+            "address": "Chicago Stock Exchange Arch, East Monroe Drive, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.62117554579066,
+                41.88066915
+            ],
+            "node": "33718418"
+        },
+        {
+            "name": "City Mini Golf",
+            "address": "City Mini Golf, Millennium Garage (Entrance), Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.62019479720047,
+                41.88217775
+            ],
+            "node": "33718418"
+        },
+        {
+            "name": "George Washington Memorial",
+            "address": "George Washington Memorial, South Doctor Martin Luther King Junior Drive, Chicago, IL 90615, United States of America",
+            "coordinates": [
+                -87.6164298,
+                41.8024808
+            ],
+            "node": "5834841235"
+        },
+        {
+            "name": "Vincent de Paul with two students",
+            "address": "Vincent de Paul with two students, North Kenmore Avenue, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.6554661,
+                41.9246625
+            ],
+            "node": "309802119"
+        },
+        {
+            "name": "Biograph Theatre",
+            "address": "Biograph Theatre, 2433 North Lincoln Avenue, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.649776,
+                41.9264521
+            ],
+            "node": "262370103"
+        },
+        {
+            "name": "Paseo Bourica Gateway Flags",
+            "address": "Paseo Bourica Gateway Flags, West Division Street, Chicago, IL 60651, United States of America",
+            "coordinates": [
+                -87.68815179966137,
+                41.90301975
+            ],
+            "node": "261156597"
+        },
+        {
+            "name": "Paseo Boricua Gateway Flags",
+            "address": "Paseo Boricua Gateway Flags, West Division Street, Chicago, IL 60651, United States of America",
+            "coordinates": [
+                -87.69794062653584,
+                41.9029305
+            ],
+            "node": "261207087"
+        },
+        {
+            "name": "Jacob A. Riis Memorial",
+            "address": "Jacob A. Riis Memorial, West Fullerton Avenue, Chicago, IL 60707, United States of America",
+            "coordinates": [
+                -87.78436245897595,
+                41.924641
+            ],
+            "node": "315577202"
+        },
+        {
+            "name": "Statue of the Republic",
+            "address": "Statue of the Republic, East Hayes Drive, Chicago, IL 60617:60649, United States of America",
+            "coordinates": [
+                -87.57989715,
+                41.77960830000001
+            ],
+            "node": "261105853"
+        },
+        {
+            "name": "Centennial Wheel",
+            "address": "Centennial Wheel, East Grand Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.60746202150708,
+                41.8916074
+            ],
+            "node": "6939664406"
+        }
+    ],
+    "parks": [
+        {
+            "name": "Humboldt Park",
+            "address": "Humboldt Park, Chicago, IL 60622, United States of America",
+            "coordinates": [
+                -87.70188253089864,
+                41.904292600000005
+            ],
+            "node": "261214695"
+        },
+        {
+            "name": "Millennium Park",
+            "address": "Millennium Park, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.62253608080282,
+                41.8825754
+            ],
+            "node": "27446495"
+        },
+        {
+            "name": "Franklin Park",
+            "address": "Franklin Park, Chicago, IL 60623, United States of America",
+            "coordinates": [
+                -87.73237389913542,
+                41.861500500000005
+            ],
+            "node": "261145337"
+        },
+        {
+            "name": "Garfield Park Conservatory",
+            "address": "Garfield Park Conservatory, 300 North Central Park Avenue, Chicago, IL 60624, United States of America",
+            "coordinates": [
+                -87.71857934772477,
+                41.88682745
+            ],
+            "node": "261264181"
+        },
+        {
+            "name": "Wieboldt Park",
+            "address": "Wieboldt Park, Chicago, IL 60657, United States of America",
+            "coordinates": [
+                -87.6729267,
+                41.9366426
+            ],
+            "node": "261321214"
+        },
+        {
+            "name": "Hadiya Pendleton Park",
+            "address": "Hadiya Pendleton Park, Chicago, IL 60653, United States of America",
+            "coordinates": [
+                -87.61831778869521,
+                41.81540175
+            ],
+            "node": "3933033264"
+        },
+        {
+            "name": "Grant Park",
+            "address": "Grant Park, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.61929037795258,
+                41.8766031
+            ],
+            "node": "740237208"
+        },
+        {
+            "name": "Senn Park",
+            "address": "Senn Park, Chicago, IL 60660, United States of America",
+            "coordinates": [
+                -87.66853804434447,
+                41.99056685
+            ],
+            "node": "261143642"
+        },
+        {
+            "name": "McKinley Park",
+            "address": "McKinley Park, Chicago, IL 60609, United States of America",
+            "coordinates": [
+                -87.67968489322344,
+                41.82489365
+            ],
+            "node": "261279620"
+        },
+        {
+            "name": "Ping Tom Memorial Park",
+            "address": "Ping Tom Memorial Park, Chicago, IL 60616, United States of America",
+            "coordinates": [
+                -87.63250633968988,
+                41.8589951
+            ],
+            "node": "2984658109"
+        },
+        {
+            "name": "Lorraine Dixon Park",
+            "address": "Lorraine Dixon Park, Chicago, IL 60619, United States of America",
+            "coordinates": [
+                -87.6028161225154,
+                41.72844645
+            ],
+            "node": "261207334"
+        },
+        {
+            "name": "Carver Park",
+            "address": "Carver Park, Chicago, IL 60827, United States of America",
+            "coordinates": [
+                -87.59831424841785,
+                41.652837250000005
+            ],
+            "node": "261137295"
+        },
+        {
+            "name": "Sauganash Trail",
+            "address": "Sauganash Trail, Chicago, IL 60646, United States of America",
+            "coordinates": [
+                -87.73754093601636,
+                41.99245675
+            ],
+            "node": "261181211"
+        },
+        {
+            "name": "Gompers Park",
+            "address": "Gompers Park, Chicago, IL 60630, United States of America",
+            "coordinates": [
+                -87.73068026109588,
+                41.974421199999995
+            ],
+            "node": "288989758"
+        },
+        {
+            "name": "River Park",
+            "address": "River Park, Chicago, IL 60625, United States of America",
+            "coordinates": [
+                -87.70269043435127,
+                41.973933450000004
+            ],
+            "node": "261147306"
+        },
+        {
+            "name": "Midway Plaisance",
+            "address": "Midway Plaisance, Chicago, IL 60637, United States of America",
+            "coordinates": [
+                -87.59630917689432,
+                41.78691275
+            ],
+            "node": "261207129"
+        },
+        {
+            "name": "Montrose Point Bird Sanctuary",
+            "address": "Montrose Point Bird Sanctuary, West Montrose Harbor Drive, Chicago, IL 60613, United States of America",
+            "coordinates": [
+                -87.63317010908523,
+                41.9629917
+            ],
+            "node": "257108503"
+        },
+        {
+            "name": "Alfred Caldwell Lily Pool",
+            "address": "Alfred Caldwell Lily Pool, North Cannon Drive, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.63392973985546,
+                41.924758350000005
+            ],
+            "node": "26099529"
+        },
+        {
+            "name": "Brooks Park",
+            "address": "Brooks Park, Chicago, IL 60631, United States of America",
+            "coordinates": [
+                -87.80882249104096,
+                42.0098489
+            ],
+            "node": "7362176088"
+        },
+        {
+            "name": "Holstein Park",
+            "address": "Holstein Park, Chicago, IL 60647, United States of America",
+            "coordinates": [
+                -87.68509202442746,
+                41.9216392
+            ],
+            "node": "261134228"
+        }
+    ],
+    "restaurants": [
+        {
+            "name": "Harry Caray's Italian Steakhouse",
+            "address": "Harry Caray's Italian Steakhouse, 33 West Kinzie Street, Chicago, IL 60654, United States of America",
+            "coordinates": [
+                -87.62931925146168,
+                41.8889931
+            ],
+            "node": "4336042974"
+        },
+        {
+            "name": "The Green Door Tavern",
+            "address": "The Green Door Tavern, 678 North Orleans Street, Chicago, IL 60654, United States of America",
+            "coordinates": [
+                -87.63740218724789,
+                41.89461525
+            ],
+            "node": "262803236"
+        },
+        {
+            "name": "The Berghoff Restaurant",
+            "address": "The Berghoff Restaurant, 17 West Adams Street, Chicago, IL 60603, United States of America",
+            "coordinates": [
+                -87.6284211,
+                41.879264
+            ],
+            "node": "27446708"
+        },
+        {
+            "name": "Greek Islands Restaurant",
+            "address": "Greek Islands Restaurant, 200 South Halsted Street, Chicago, IL 60661, United States of America",
+            "coordinates": [
+                -87.6475092,
+                41.8789853
+            ],
+            "node": "258032427"
+        },
+        {
+            "name": "Boka",
+            "address": "Boka, 1729 North Halsted Street, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.6482025,
+                41.9136386
+            ],
+            "node": "262368836"
+        },
+        {
+            "name": "Frontera Grill",
+            "address": "Frontera Grill, 445 North Clark Street, Chicago, IL 60654, United States of America",
+            "coordinates": [
+                -87.6309213,
+                41.8905369
+            ],
+            "node": "29411955"
+        },
+        {
+            "name": "Lawry's The Prime Rib",
+            "address": "Lawry's The Prime Rib, 100 East Ontario Street, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.6250273,
+                41.8934902
+            ],
+            "node": "736861662"
+        },
+        {
+            "name": "Oriole",
+            "address": "Oriole, 661 West Walnut Street, Chicago, IL 60661, United States of America",
+            "coordinates": [
+                -87.6451011,
+                41.8860045
+            ],
+            "node": "261177784"
+        },
+        {
+            "name": "The Wiener\u2019s Circle",
+            "address": "The Wiener\u2019s Circle, 2622 North Clark Street, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.6438156,
+                41.930152
+            ],
+            "node": "26808049"
+        },
+        {
+            "name": "Taco Lul\u00fa",
+            "address": "Taco Lul\u00fa, 601 West Adams Street, Chicago, IL 60661, United States of America",
+            "coordinates": [
+                -87.6428165,
+                41.879101
+            ],
+            "node": "257381494"
+        },
+        {
+            "name": "What's Krackin Southern Seafood",
+            "address": "What's Krackin Southern Seafood, 1310 East 53rd Street, Chicago, IL 60615, United States of America",
+            "coordinates": [
+                -87.59452802941985,
+                41.799699399999994
+            ],
+            "node": "261137166"
+        },
+        {
+            "name": "Sullivan's Steakhouse",
+            "address": "Sullivan's Steakhouse, 415 North Dearborn Street, Chicago, IL 60654, United States of America",
+            "coordinates": [
+                -87.62932905,
+                41.889805300000006
+            ],
+            "node": "29411956"
+        },
+        {
+            "name": "Ruth's Chris Steak House",
+            "address": "Ruth's Chris Steak House, 431 North Dearborn Street, Chicago, IL 60654, United States of America",
+            "coordinates": [
+                -87.62934487651839,
+                41.89027985
+            ],
+            "node": "29411956"
+        },
+        {
+            "name": "Hard Rock Cafe",
+            "address": "Hard Rock Cafe, 63 West Ontario Street, Chicago, IL 60654, United States of America",
+            "coordinates": [
+                -87.63048989426596,
+                41.892988450000004
+            ],
+            "node": "29412102"
+        },
+        {
+            "name": "Su Casa Mexican Restaurant",
+            "address": "Su Casa Mexican Restaurant, 49 East Ontario Street, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.62618615,
+                41.8931208
+            ],
+            "node": "258965973"
+        },
+        {
+            "name": "Pizzeria Due",
+            "address": "Pizzeria Due, 619 North Wabash Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.62645546609474,
+                41.8931124
+            ],
+            "node": "258965973"
+        },
+        {
+            "name": "Smakosz Restaurant",
+            "address": "Smakosz Restaurant, 5619 West Lawrence Avenue, Chicago, IL 60630, United States of America",
+            "coordinates": [
+                -87.76838262450298,
+                41.967531
+            ],
+            "node": "105254026"
+        },
+        {
+            "name": "Kale My Name",
+            "address": "Kale My Name, 3300 West Montrose Avenue, Chicago, IL 60625, United States of America",
+            "coordinates": [
+                -87.71087451617186,
+                41.96138205
+            ],
+            "node": "306083790"
+        },
+        {
+            "name": "Cantina Laredo",
+            "address": "Cantina Laredo, 508 North State Street, Chicago, IL 60654, United States of America",
+            "coordinates": [
+                -87.62842442429871,
+                41.8911021
+            ],
+            "node": "258023316"
+        },
+        {
+            "name": "Irazu",
+            "address": "Irazu, 1865 North Milwaukee Avenue, Chicago, IL 60647, United States of America",
+            "coordinates": [
+                -87.68508235000473,
+                41.9155536
+            ],
+            "node": "43510489"
+        }
+    ],
+    "housing": [
+        {
+            "name": "London House Chicago",
+            "address": "London House Chicago, 85 East Wacker Drive, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.6253587,
+                41.88778
+            ],
+            "node": "269446292"
+        },
+        {
+            "name": "InterContinental Chicago Hotel",
+            "address": "InterContinental Chicago Hotel, 505 North Michigan Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.62356451894273,
+                41.8913503
+            ],
+            "node": "3884752869"
+        },
+        {
+            "name": "Hyatt Regency Chicago",
+            "address": "Hyatt Regency Chicago, 151 East Wacker Drive, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.6228422065339,
+                41.8874488
+            ],
+            "node": "1386043194"
+        },
+        {
+            "name": "Selina Hotel Chicago",
+            "address": "Selina Hotel Chicago, 100 East Chestnut Street, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.62560913204317,
+                41.898571000000004
+            ],
+            "node": "261149261"
+        },
+        {
+            "name": "Renaissance Blackstone Hotel",
+            "address": "Renaissance Blackstone Hotel, 636 South Michigan Avenue, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.62479032530325,
+                41.8732987
+            ],
+            "node": "258287219"
+        },
+        {
+            "name": "Best Western Grant Park Hotel",
+            "address": "Best Western Grant Park Hotel, 1100 South Michigan Avenue, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.62467312362466,
+                41.8690882
+            ],
+            "node": "272208970"
+        },
+        {
+            "name": "Royal Sonesta Chicago Riverfront",
+            "address": "Royal Sonesta Chicago Riverfront, 71 East Wacker Drive, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.6256571488259,
+                41.88736915
+            ],
+            "node": "740363265"
+        },
+        {
+            "name": "Hampton Inn Chicago Downtown/North Loop",
+            "address": "Hampton Inn Chicago Downtown/North Loop, 68 East Wacker Place, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.62544150723002,
+                41.88702885
+            ],
+            "node": "271182697"
+        },
+        {
+            "name": "Hyatt Centric The Loop Chicago",
+            "address": "Hyatt Centric The Loop Chicago, 100 West Monroe Street, Chicago, IL 60603, United States of America",
+            "coordinates": [
+                -87.63114791127748,
+                41.8808569
+            ],
+            "node": "28289874"
+        },
+        {
+            "name": "Silversmith Hotel Chicago Downtown",
+            "address": "Silversmith Hotel Chicago Downtown, 10 South Wabash Avenue, Chicago, IL 60603, United States of America",
+            "coordinates": [
+                -87.62664444816053,
+                41.88168455
+            ],
+            "node": "27446719"
+        },
+        {
+            "name": "St. Jane Chicago",
+            "address": "St. Jane Chicago, 230 North Michigan Avenue, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.62500286339855,
+                41.886599950000004
+            ],
+            "node": "271182697"
+        },
+        {
+            "name": "Holiday Inn Chicago-Downtown",
+            "address": "Holiday Inn Chicago-Downtown, 506 West Harrison Street, Chicago, IL 60607, United States of America",
+            "coordinates": [
+                -87.63994605057275,
+                41.8748698
+            ],
+            "node": "428891513"
+        },
+        {
+            "name": "W Chicago - Lakeshore",
+            "address": "W Chicago - Lakeshore, 644 North Lake Shore Drive, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.61560031864947,
+                41.8938745
+            ],
+            "node": "27440581"
+        },
+        {
+            "name": "21C Museum Hotel Chicago",
+            "address": "21C Museum Hotel Chicago, 55 East Ontario Street, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.62596074439689,
+                41.89299565
+            ],
+            "node": "736861662"
+        },
+        {
+            "name": "Warwick Allerton Hotel Chicago",
+            "address": "Warwick Allerton Hotel Chicago, 701 North Michigan Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.62373507429783,
+                41.89520345
+            ],
+            "node": "261161069"
+        },
+        {
+            "name": "DoubleTree Hotel Chicago - Magnificent Mile",
+            "address": "DoubleTree Hotel Chicago - Magnificent Mile, 300 East Ohio Street, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.61981324923437,
+                41.892801500000004
+            ],
+            "node": "258023461"
+        },
+        {
+            "name": "Hotel Chicago West Loop",
+            "address": "Hotel Chicago West Loop, 1622 West Jackson Boulevard, Chicago, IL 60612, United States of America",
+            "coordinates": [
+                -87.66777514131908,
+                41.877951949999996
+            ],
+            "node": "4336093359"
+        },
+        {
+            "name": "Hotel Versey",
+            "address": "Hotel Versey, 644 West Diversey Parkway, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.64557362953778,
+                41.9330538
+            ],
+            "node": "32873350"
+        },
+        {
+            "name": "Best Western Plus Hawthorne Terrace",
+            "address": "Best Western Plus Hawthorne Terrace, 3434 North Broadway, Chicago, IL 60657, United States of America",
+            "coordinates": [
+                -87.64595343270484,
+                41.944113
+            ],
+            "node": "262170097"
+        },
+        {
+            "name": "The Allegro Royal Sonesta Hotel Chicago Loop",
+            "address": "The Allegro Royal Sonesta Hotel Chicago Loop, 171 West Randolph Street, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.63350414983856,
+                41.8840931
+            ],
+            "node": "27477592"
+        }
+    ],
+    "museums": [
+        {
+            "name": "Field Museum",
+            "address": "Field Museum, 1400 East McFetridge Drive, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.61689125981054,
+                41.866221499999995
+            ],
+            "node": "3810503851"
+        },
+        {
+            "name": "Ukrainian Institute of Modern Art",
+            "address": "Ukrainian Institute of Modern Art, 2320 West Chicago Avenue, Chicago, IL 60622, United States of America",
+            "coordinates": [
+                -87.68516527530312,
+                41.89597985
+            ],
+            "node": "261135333"
+        },
+        {
+            "name": "National Museum of Puerto Rican Arts & Culture",
+            "address": "National Museum of Puerto Rican Arts & Culture, 3015 West Division Street, Chicago, IL 60622, United States of America",
+            "coordinates": [
+                -87.703187,
+                41.9023107
+            ],
+            "node": "261114521"
+        },
+        {
+            "name": "Ukrainian National Museum",
+            "address": "Ukrainian National Museum, West Superior Street, Chicago, IL 60612, United States of America",
+            "coordinates": [
+                -87.6840067,
+                41.894607
+            ],
+            "node": "261135332"
+        },
+        {
+            "name": "Oriental Institute",
+            "address": "Oriental Institute, 1155 East 58th Street, Chicago, IL 60637, United States of America",
+            "coordinates": [
+                -87.59771803592608,
+                41.7892454
+            ],
+            "node": "261139504"
+        },
+        {
+            "name": "The Art Institute of Chicago",
+            "address": "The Art Institute of Chicago, 111 South Michigan Avenue, Chicago, IL 60603, United States of America",
+            "coordinates": [
+                -87.62308280420407,
+                41.8796009
+            ],
+            "node": "27446488"
+        },
+        {
+            "name": "The Peggy Notebaert Nature Museum",
+            "address": "The Peggy Notebaert Nature Museum, 2430 North Cannon Drive, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.63542140865528,
+                41.9269829
+            ],
+            "node": "258964877"
+        },
+        {
+            "name": "Museum of Contemporary Art",
+            "address": "Museum of Contemporary Art, 220 East Chicago Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.62112344692875,
+                41.89722165
+            ],
+            "node": "27440565"
+        },
+        {
+            "name": "Museum of Science and Industry",
+            "address": "Museum of Science and Industry, 5700 South Lake Shore Drive, Chicago, IL 60637, United States of America",
+            "coordinates": [
+                -87.58293048227472,
+                41.79076255
+            ],
+            "node": "261323725"
+        },
+        {
+            "name": "David and Alfred Smart Museum of Art",
+            "address": "David and Alfred Smart Museum of Art, 5550 South Greenwood Avenue, Chicago, IL 60637, United States of America",
+            "coordinates": [
+                -87.6001865,
+                41.793512199999995
+            ],
+            "node": "261176760"
+        },
+        {
+            "name": "Irish American Heritage Center",
+            "address": "Irish American Heritage Center, 4626 North Knox Avenue, Chicago, IL 60630, United States of America",
+            "coordinates": [
+                -87.74458872113371,
+                41.9653258
+            ],
+            "node": "261195084"
+        },
+        {
+            "name": "National Museum of Mexican Art",
+            "address": "National Museum of Mexican Art, 1852 West 19th Street, Chicago, IL 60608, United States of America",
+            "coordinates": [
+                -87.6729811970194,
+                41.85611385
+            ],
+            "node": "261228578"
+        },
+        {
+            "name": "Vanderpoel Art Museum",
+            "address": "Vanderpoel Art Museum, 9625 South Longwood Drive, Chicago, IL 60643, United States of America",
+            "coordinates": [
+                -87.6678158,
+                41.7187453
+            ],
+            "node": "261197687"
+        },
+        {
+            "name": "Glessner House Museum",
+            "address": "Glessner House Museum, 1600 South Indiana Avenue, Chicago, IL 60616, United States of America",
+            "coordinates": [
+                -87.6214507168518,
+                41.85771665
+            ],
+            "node": "261185721"
+        },
+        {
+            "name": "Jane Addams' Hull-House Museum",
+            "address": "Jane Addams' Hull-House Museum, 800 South Halsted Street, Chicago, IL 60607, United States of America",
+            "coordinates": [
+                -87.64739720073692,
+                41.87165125
+            ],
+            "node": "1619646530"
+        },
+        {
+            "name": "Fire Museum of Greater Chicago",
+            "address": "Fire Museum of Greater Chicago, 5218 South Western Avenue, Chicago, IL 60609, United States of America",
+            "coordinates": [
+                -87.68453323304655,
+                41.7986935
+            ],
+            "node": "261295811"
+        },
+        {
+            "name": "Intuit: The Center for Intuitive and Outsider Art",
+            "address": "Intuit: The Center for Intuitive and Outsider Art, 756 North Milwaukee Avenue, Chicago, IL 60642, United States of America",
+            "coordinates": [
+                -87.65455606063455,
+                41.895415650000004
+            ],
+            "node": "739187902"
+        },
+        {
+            "name": "Chinese American Museum of Chicago",
+            "address": "Chinese American Museum of Chicago, 238 West 23rd Street, Chicago, IL 60616, United States of America",
+            "coordinates": [
+                -87.63352485,
+                41.8512035
+            ],
+            "node": "261118916"
+        },
+        {
+            "name": "A. Philip Randolph Pullman Porter Museum",
+            "address": "A. Philip Randolph Pullman Porter Museum, 10406 South Maryland Avenue, Chicago, IL 60628, United States of America",
+            "coordinates": [
+                -87.6030690936382,
+                41.7053739
+            ],
+            "node": "261192046"
+        },
+        {
+            "name": "Money Museum",
+            "address": "Money Museum, 230 South LaSalle Street, Chicago, IL 60604, United States of America",
+            "coordinates": [
+                -87.632568,
+                41.87833
+            ],
+            "node": "27440214"
+        }
+    ],
+    "entertainment": [
+        {
+            "name": "Hyde Park Art Center",
+            "address": "Hyde Park Art Center, 5020 South Cornell Avenue, Chicago, IL 60615, United States of America",
+            "coordinates": [
+                -87.5867814938348,
+                41.803391649999995
+            ],
+            "node": "261205295"
+        },
+        {
+            "name": "Lincoln Park Zoo",
+            "address": "Lincoln Park Zoo, 2001 North Clark Street, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.63376980451716,
+                41.921264750000006
+            ],
+            "node": "258964872"
+        },
+        {
+            "name": "Civic Opera House",
+            "address": "Civic Opera House, 20 North Upper Wacker Drive, Chicago, IL 60606, United States of America",
+            "coordinates": [
+                -87.6374824197122,
+                41.88257055
+            ],
+            "node": "7015621042"
+        },
+        {
+            "name": "Copernicus Center",
+            "address": "Copernicus Center, 5216 West Lawrence Avenue, Chicago, IL 60630, United States of America",
+            "coordinates": [
+                -87.75847343338229,
+                41.968243650000005
+            ],
+            "node": "288470890"
+        },
+        {
+            "name": "Chicago Filmmakers",
+            "address": "Chicago Filmmakers, 5243 North Clark Street, Chicago, IL 60640, United States of America",
+            "coordinates": [
+                -87.668084,
+                41.977462
+            ],
+            "node": "257172366"
+        },
+        {
+            "name": "South Side Community Art Center (SSCAC)",
+            "address": "South Side Community Art Center (SSCAC), 3831 South Michigan Avenue, Chicago, IL 60653, United States of America",
+            "coordinates": [
+                -87.6227977,
+                41.8246026
+            ],
+            "node": "537982878"
+        },
+        {
+            "name": "Corbett vs. Dempsey",
+            "address": "Corbett vs. Dempsey, 2156 West Fulton Street, Chicago, IL 60612, United States of America",
+            "coordinates": [
+                -87.6815231,
+                41.8868372
+            ],
+            "node": "261235129"
+        },
+        {
+            "name": "South Asia Institute",
+            "address": "South Asia Institute, 1925 South Michigan Avenue, Chicago, IL 60616, United States of America",
+            "coordinates": [
+                -87.623635,
+                41.8558929
+            ],
+            "node": "262185847"
+        },
+        {
+            "name": "Chicago Theatre",
+            "address": "Chicago Theatre, 175 North State Street, Chicago, IL 60601, United States of America",
+            "coordinates": [
+                -87.6272440811054,
+                41.8854953
+            ],
+            "node": "258957342"
+        },
+        {
+            "name": "Theater on the Lake",
+            "address": "Theater on the Lake, 2401 North Lake Shore Drive, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.63073778974186,
+                41.92718495
+            ],
+            "node": "26099544"
+        },
+        {
+            "name": "Huntington Bank Pavilion at Northerly Island",
+            "address": "Huntington Bank Pavilion at Northerly Island, 1300 South Linn White Drive, Chicago, IL 60605, United States of America",
+            "coordinates": [
+                -87.60849274050224,
+                41.8633504
+            ],
+            "node": "258291823"
+        },
+        {
+            "name": "Harper Theater",
+            "address": "Harper Theater, 5238 South Harper Avenue, Chicago, IL 60615, United States of America",
+            "coordinates": [
+                -87.5895010494852,
+                41.79986235
+            ],
+            "node": "261141740"
+        },
+        {
+            "name": "AMC Ford City 14",
+            "address": "AMC Ford City 14, 7601 South Cicero Avenue, Chicago, IL 60652, United States of America",
+            "coordinates": [
+                -87.73337222976754,
+                41.753556
+            ],
+            "node": "4359560841"
+        },
+        {
+            "name": "Ed Paschke Art Center",
+            "address": "Ed Paschke Art Center, 5415 West Higgins Avenue, Chicago, IL 60630, United States of America",
+            "coordinates": [
+                -87.76219761317556,
+                41.96841995
+            ],
+            "node": "6162746801"
+        },
+        {
+            "name": "Reggies Music Joint",
+            "address": "Reggies Music Joint, 2105 South State Street, Chicago, IL 60616, United States of America",
+            "coordinates": [
+                -87.62676122496961,
+                41.8539276
+            ],
+            "node": "262185924"
+        },
+        {
+            "name": "Harold Washington Cultural Center",
+            "address": "Harold Washington Cultural Center, 4701 South Doctor Martin Luther King Junior Drive, Chicago, IL 60615, United States of America",
+            "coordinates": [
+                -87.61576572001303,
+                41.80910365
+            ],
+            "node": "261283331"
+        },
+        {
+            "name": "Neofuturists",
+            "address": "Neofuturists, North Ashland Avenue, Chicago, IL 60640, United States of America",
+            "coordinates": [
+                -87.6693323,
+                41.9757947
+            ],
+            "node": "4069241713"
+        },
+        {
+            "name": "Navy Pier IMAX Theatre",
+            "address": "Navy Pier IMAX Theatre, 700 East Grand Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.6092419,
+                41.8918968
+            ],
+            "node": "736932687"
+        },
+        {
+            "name": "Regal Webster Place",
+            "address": "Regal Webster Place, 1471 West Webster Avenue, Chicago, IL 60614, United States of America",
+            "coordinates": [
+                -87.6654001,
+                41.9213456
+            ],
+            "node": "261294969"
+        },
+        {
+            "name": "Chicago Shakespeare Theater",
+            "address": "Chicago Shakespeare Theater, 800 East Grand Avenue, Chicago, IL 60611, United States of America",
+            "coordinates": [
+                -87.60580789368485,
+                41.89129745
+            ],
+            "node": "6939644045"
+        }
+    ]
+}
