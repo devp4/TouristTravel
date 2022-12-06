@@ -19,7 +19,7 @@ body {
   width: 10%;
   background-color: rgba(255,255,255,.9);
   border: solid black 2px;
-  height: 700px;
+  height: 725px;
   width: 300px;
   position:absolute;
   z-index:401;
@@ -42,13 +42,13 @@ body {
 }
 
 .show-route {
-  margin-bottom: 3%;
   font-size: 15px;
   text-align: left;
 }
 
 .option-items {
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .goto-div {
@@ -75,7 +75,6 @@ body {
 }
 
 .row-text {
-  padding-top: 0px;
   padding-bottom: 5px;
   padding-left:9px;
 }
@@ -112,7 +111,6 @@ body {
 .route-label {
   margin-right: 10%;
   margin-bottom: 3%;
-  padding-bottom: 5px;
   text-align: left;
 }
 
