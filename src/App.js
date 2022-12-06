@@ -142,7 +142,6 @@ const App = () => {
 	
 	return (
 		<div>
-			<Modal></Modal>
 			{dijkstraData && a_starData ? <Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data> : null}
 			<div className='goto-div'>
 				<label>
