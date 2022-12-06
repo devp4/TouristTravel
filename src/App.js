@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import MarkerPopup from './components/MarkerPopup';
 import SideBar from './components/SideBar';
 import Data from './components/Data';
-import Modal from './components/Modal';
 
 const App = () => {
 
@@ -152,9 +151,24 @@ const App = () => {
 		return temp_markers
 	}
 	
+	const toggleContainer = () => {
+		const container = document.getElementById("container")
+		container.classList.toggle("opened")
+
+		const button = document.getElementById("container-button")
+		if (button.innerHTML === "Show") {
+			button.innerHTML = "Hide"
+		} 
+		else {
+			button.innerHTML = "Show"
+		}
+		
+	}
+	
 	return (
 		<div>
-			<div className="container">
+			<button id="container-button" className="container-button" type='button' onClick={() => toggleContainer()}>Show</button>
+			<div id="container" className="container">
 				<h2>Options</h2>
 				<p className="amplifier-value">A* Search Amplifier: 
 					<span id="amplifier-value" >{" 1"}</span>
