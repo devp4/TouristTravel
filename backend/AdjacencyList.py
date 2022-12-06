@@ -190,7 +190,7 @@ class AdjacencyList:
                                 y = self.graph.nodes[end]['y'] - \
                                     self.graph.nodes[destination]['y']
                                 heuristic = math.sqrt(
-                                    math.pow(x, 2) + math.pow(y, 2)) * math.pow(10, amplifier * 4.925)
+                                    math.pow(x, 2) + math.pow(y, 2)) * math.pow(10, amplifier * 4.9)
                                 newKey = newKey + heuristic
 
                             p = (newKey, destination)

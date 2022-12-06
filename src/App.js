@@ -161,16 +161,25 @@ const App = () => {
 					<br></br>
 					<input className="amplifier-range" id="amplifier-range" type="range" min={0} max={2} step={0.05} defaultValue={1} onInput={() => change()}></input>
 				</p>
+					
 				<label className='show-route'>
-					<input id="dijkstra" type="checkbox" defaultChecked={showDijkstra} onChange={() => setshowDijkstra(!showDijkstra)}/>
-					{"Dijkstra"}
-					<input id="a-star" type="checkbox" defaultChecked={showA_star} onChange={() => setshowA_star(!showA_star)}/>
-					{"A* Search"}
+				<ul>
+					<li className="option-items">
+						<input id="dijkstra" type="checkbox" defaultChecked={showDijkstra} onChange={() => setshowDijkstra(!showDijkstra)}/>
+						{"Dijkstra"}
+					</li>
+					<li className="option-items">
+						<input id="a-star" type="checkbox" defaultChecked={showA_star} onChange={() => setshowA_star(!showA_star)}/>
+						{"A* Search"}
+					</li>
+					<li className="option-items">
+						<p className="route-label">
+							<input type="checkbox" defaultChecked={viewRoute} onChange={() => setviewRoute(!viewRoute)}></input>
+							Show Route 
+						</p>
+					</li>
+				</ul>
 				</label>
-				<p className="route-label">
-					<input type="checkbox" defaultChecked={viewRoute} onChange={() => setviewRoute(!viewRoute)}></input>
-					Show Route 
-				</p>
 				<Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data>
 				<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
 			</div>

@@ -47,6 +47,10 @@ body {
   text-align: left;
 }
 
+.option-items {
+  padding-bottom: 10px;
+}
+
 .goto-div {
   background-color: white;
   position:absolute; 
