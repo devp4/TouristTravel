@@ -12,9 +12,12 @@ const App = () => {
 	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "museums", "housing", "restaurants"])
 	
 	const [nodes, setNodes] = useState([])
-	const [route, setRoute] = useState(undefined)
-	const [data, setData] = useState({})
-	
+
+	const [dijkstraData, setdijkstraData] = useState({})
+	const [a_starData, seta_starData] = useState({})
+	const [dijkstraRoute, setdijkstraRoute] = useState(undefined)
+	const [a_starRoute, seta_starRoute] = useState(undefined)
+
 	const [geoLayer, setgeoLayer] = useState(1)
 	const [city, setCity] = useState("New York")
 	const [map, setMap] = useState(null);
@@ -77,27 +80,27 @@ const App = () => {
 
 	useEffect(() => {
 		if (nodes.length < 2) {
-			setData({})
-			setRoute(undefined)
+			setdijkstraData({})
+			seta_starData({})
+			setdijkstraRoute(undefined)
+			seta_starRoute(undefined)
 			return
 		}
 
 		// When length of route is > 2, find shortest path between nodes
 		
 		// Get options
-		let algorithm = "dijkstra"
-		if (document.getElementById("a-star").checked) {
-			algorithm = "a-star"
-		}
 		let amplifier = document.getElementById("amplifier-range").value
 		
-		const response = getPath({nodes: nodes, algorithm: algorithm, amplifier: amplifier})
+		const response = getPath({nodes: nodes, amplifier: amplifier})
 
 		// Set response data to resepective states
 		response.then((response) => response.json()).then((data) => {
-			setData(data["data"])
+			setdijkstraData(data["dijkstra_data"])
+			seta_starData(data["a-star_data"])
 			setgeoLayer((current) => current + 1)
-			setRoute(data["GeoJSON"])
+			setdijkstraRoute(data["dijkstra_GeoJSON"])
+			seta_starRoute(data["a-star_GeoJSON"])
 		})
 
 	}, [nodes])
@@ -108,8 +111,10 @@ const App = () => {
 
 		// Reset State
 		setNodes([])
-		setRoute(undefined)
-		setData({})
+		setdijkstraData({})
+		seta_starData({})
+		setdijkstraRoute(undefined)
+		seta_starRoute(undefined)
 
 		map.flyTo(cities[city]["coordinates"], 13, {duration: 3})
 	}
@@ -136,7 +141,6 @@ const App = () => {
 	
 	return (
 		<div>
-			<Data data={data}></Data>
 			<div className='goto-div'>
 				<label>
 					<input id="dijkstra" type ="checkbox" defaultChecked={true} onChange={() => checkboxChange("a-star")}/>
@@ -158,7 +162,8 @@ const App = () => {
 				{viewMarkers ? viewMarkers.map((feature) =>
 					markers[feature] ? markers[feature].map((marker) => 
 						<MarkerPopup marker={marker} nodes={nodes} setNodes={setNodes}></MarkerPopup>): null) : null}
-				{route ? <GeoJSON key={geoLayer} data={route["features"]}></GeoJSON> : null}
+				{dijkstraRoute ? <GeoJSON key={geoLayer} data={dijkstraRoute["features"]}></GeoJSON> : null}
+				{a_starRoute ? <GeoJSON key={geoLayer} data={a_starRoute["features"]} color="red"></GeoJSON> : null}
 			</MapContainer>
 		</div>
 	);

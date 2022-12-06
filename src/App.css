@@ -39,6 +39,16 @@ body {
   width: 200px;
 }
 
+.data-div {
+  background-color: rebeccapurple;
+  position:absolute; 
+  z-index:401;
+  max-width: 200px;
+  margin-left: 70%;
+  margin-top: 20%;
+  width: 200px;
+}
+
 .goto {
   position:absolute; 
   z-index:500;
