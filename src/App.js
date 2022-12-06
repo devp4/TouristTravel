@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import MarkerPopup from './components/MarkerPopup';
 import SideBar from './components/SideBar';
 import Data from './components/Data';
+import Modal from './components/Modal';
 
 const App = () => {
 
@@ -141,6 +142,7 @@ const App = () => {
 	
 	return (
 		<div>
+			<Modal></Modal>
 			{dijkstraData && a_starData ? <Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data> : null}
 			<div className='goto-div'>
 				<label>

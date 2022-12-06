@@ -67,6 +67,13 @@ body {
   width: 100vw;
 }
 
+.modal {
+  position:absolute; 
+  z-index:700;
+  background-color: red;
+  margin-top: 10%;
+}
+
 input[type=checkbox] {
    margin: 2px;
    display:inline-block;
