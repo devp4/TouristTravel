@@ -27,7 +27,12 @@ body {
   font-size:2vw;
 }
 
-
+.RightSideBar {
+  position:absolute; 
+  z-index:401;
+  left:20px;
+  top:20px;
+}
 
 .goto-div {
   background-color: rebeccapurple;
