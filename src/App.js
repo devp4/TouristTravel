@@ -13,8 +13,8 @@ const App = () => {
 	
 	const [nodes, setNodes] = useState([])
 
-	const [dijkstraData, setdijkstraData] = useState({})
-	const [a_starData, seta_starData] = useState({})
+	const [dijkstraData, setdijkstraData] = useState(undefined)
+	const [a_starData, seta_starData] = useState(undefined)
 	const [dijkstraRoute, setdijkstraRoute] = useState(undefined)
 	const [a_starRoute, seta_starRoute] = useState(undefined)
 
@@ -80,8 +80,8 @@ const App = () => {
 
 	useEffect(() => {
 		if (nodes.length < 2) {
-			setdijkstraData({})
-			seta_starData({})
+			setdijkstraData(undefined)
+			seta_starData(undefined)
 			setdijkstraRoute(undefined)
 			seta_starRoute(undefined)
 			return
@@ -98,7 +98,7 @@ const App = () => {
 		response.then((response) => response.json()).then((data) => {
 			setdijkstraData(data["dijkstra_data"])
 			seta_starData(data["a-star_data"])
-			setgeoLayer((current) => current + 1)
+			setgeoLayer((current) => current + 2)
 			setdijkstraRoute(data["dijkstra_GeoJSON"])
 			seta_starRoute(data["a-star_GeoJSON"])
 		})
@@ -111,8 +111,8 @@ const App = () => {
 
 		// Reset State
 		setNodes([])
-		setdijkstraData({})
-		seta_starData({})
+		setdijkstraData(undefined)
+		seta_starData(undefined)
 		setdijkstraRoute(undefined)
 		seta_starRoute(undefined)
 
@@ -141,6 +141,7 @@ const App = () => {
 	
 	return (
 		<div>
+			{dijkstraData && a_starData ? <Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data> : null}
 			<div className='goto-div'>
 				<label>
 					<input id="dijkstra" type ="checkbox" defaultChecked={true} onChange={() => checkboxChange("a-star")}/>
@@ -148,8 +149,8 @@ const App = () => {
 					<input id="a-star" type ="checkbox" defaultChecked={false} disabled={true} onChange={() => checkboxChange("dijkstra")}/>
 					{"A*"}
         		</label>
-				<input id="amplifier-range" type="range" min={0} max={1} step={0.1} defaultValue={0.5} onInput={() => change()}></input>
-				<p>Amplifier: <span id="amplifier-value" >{"0.5"}</span></p>
+				<input id="amplifier-range" type="range" min={0} max={2} step={0.1} defaultValue={1} onInput={() => change()}></input>
+				<p>Amplifier: <span id="amplifier-value" >{"1"}</span></p>
 			</div>	
 			<button className='goto' onClick={() => fly("Seattle")} type="button" data-bs-target="#exampleModal">Go To</button>
 			<div class="modal fade fixed top-0" id="exampleModal"></div>
@@ -163,7 +164,7 @@ const App = () => {
 					markers[feature] ? markers[feature].map((marker) => 
 						<MarkerPopup marker={marker} nodes={nodes} setNodes={setNodes}></MarkerPopup>): null) : null}
 				{dijkstraRoute ? <GeoJSON key={geoLayer} data={dijkstraRoute["features"]}></GeoJSON> : null}
-				{a_starRoute ? <GeoJSON key={geoLayer} data={a_starRoute["features"]} color="red"></GeoJSON> : null}
+				{a_starRoute ? <GeoJSON key={geoLayer + 1} data={a_starRoute["features"]} color="red"></GeoJSON> : null}
 			</MapContainer>
 		</div>
 	);
