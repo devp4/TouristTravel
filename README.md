@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 
-### `npm instll`
+### `npm install`
 Installs required npm packages 
 
 ### `npm start`
