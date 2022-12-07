@@ -23,12 +23,16 @@ class AdjacencyList:
             "Chicago, Illinois", network_type="drive")
 
         se_graph = ox.graph_from_place(
-             "Seattle, Washington", network_type="drive")
+            "Seattle, Washington", network_type="drive")
+            
+        mi_graph = ox.graph_from_place(
+            "Miami, Florida", network_type="drive")
 
         graphs = {
             "NY": ny_graph,
             "CH": ch_graph,
-            "SE": se_graph
+            "SE": se_graph,
+            "MI": mi_graph,
         }
 
         print("GRAPHS LOADED")
