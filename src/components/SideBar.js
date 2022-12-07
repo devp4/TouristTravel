@@ -20,9 +20,10 @@ const SideBar = ({ viewMarkers, setviewMarkers }) => {
     }
 
     return (
-        <div>
+        <div id="features" className="features">
+            <img src={require('../assets/featuresicon.png')} class="features-icon" alt=""></img>
             <h2>Features</h2>
-            <div className="features">
+            <div className="features-list">
                 <Checkbox
                     label="Tourist Attractions"
                     id="toursim"

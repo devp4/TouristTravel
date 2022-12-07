@@ -95,11 +95,22 @@ const MarkerPopup = ({ marker, nodes, setNodes }) => {
         icon={marker.icon}
       >
         <Popup ref={setpopupRef}>
-          <div>
-            <h3>{marker.name}</h3>
+          <div className="marker-popup">
+            <h3>{nodes.includes(marker.node) ? "Stop #" + (nodes.indexOf(marker.node) + 1) + ": " + marker.name : marker.name}</h3>
             <h4>{marker.address}</h4>
-            <h4>{marker.node}</h4>
-            {nodes.includes(marker.node) ? <button onClick={() => removeStop(marker.node)}>Remove Stop</button> : <button onClick={() => addStop(marker.node)}>Add Stop</button>}
+            <div className="popup-buttons">
+            {nodes.includes(marker.node) ? 
+              <div className="remove-stop">
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => removeStop(marker.node)}>Remove Stop</button>
+              </div>
+               : 
+              <div className="add-stop">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => addStop(marker.node)}>Add Stop</button>
+              </div>}
+              <div className="more-info">
+                <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => window.open("https://www.google.com/search?q=" + marker.name + " " + marker.address)}>More Info</button>
+              </div>
+              </div>
           </div>
         </Popup>
       </Marker>

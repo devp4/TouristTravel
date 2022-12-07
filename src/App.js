@@ -152,8 +152,17 @@ const App = () => {
 	}
 	
 	const toggleContainer = () => {
-		const container = document.getElementById("container")
-		container.classList.toggle("opened")
+		//const container = document.getElementById("container")
+		//container.classList.toggle("opened")
+
+		const options = document.getElementById("options")
+		options.classList.toggle("opened")
+
+		const data = document.getElementById("data")
+		data.classList.toggle("opened")
+
+		const features = document.getElementById("features")
+		features.classList.toggle("opened")
 
 		const button = document.getElementById("container-button")
 		if (button.innerHTML === "Show") {
@@ -168,25 +177,28 @@ const App = () => {
 	return (
 		<div>
 			<button id="container-button" className="container-button" type='button' onClick={() => toggleContainer()}>Show</button>
-			<div id="container" className="container">
+			<div className="container">
+				<div id="options" className="options">
+				<img src={require('./assets/optionsicon.png')} class="options-icon" alt=""></img>
 				<h2>Options</h2>
-				<p className="amplifier-value">A* Search Amplifier: 
-					<span id="amplifier-value" >{" 1"}</span>
-					<br></br>
-					<input className="amplifier-range" id="amplifier-range" type="range" min={0} max={2} step={0.05} defaultValue={1} onInput={() => change()}></input>
-				</p>
-				<p className="route-label">
-					<input id="dijkstra" type="checkbox" defaultChecked={showDijkstra} onChange={() => setshowDijkstra(!showDijkstra)}></input>
-					Dijkstra
-				</p>
-				<p className="route-label">
-					<input id="a-star" type="checkbox" defaultChecked={showA_star} onChange={() => setshowA_star(!showA_star)}></input>
-					A* Search
-				</p>
-				<p className="route-label">
-					<input type="checkbox" defaultChecked={viewRoute} onChange={() => setviewRoute(!viewRoute)}></input>
-					Show Route 
-				</p>
+					<p className="amplifier-value">A* Search Amplifier: 
+						<span id="amplifier-value" >{" 1"}</span>
+						<br></br>
+						<input className="amplifier-range" id="amplifier-range" type="range" min={0} max={2} step={0.05} defaultValue={1} onInput={() => change()}></input>
+					</p>
+					<label className="route-label">
+						<input id="dijkstra" type="checkbox" defaultChecked={showDijkstra} onChange={() => setshowDijkstra(!showDijkstra)}/>
+						Dijkstra
+					</label>
+					<label className="route-label">
+						<input id="a-star" type="checkbox" defaultChecked={showA_star} onChange={() => setshowA_star(!showA_star)}/>
+						A* Search
+					</label>
+					<label className="route-label">
+						<input type="checkbox" defaultChecked={viewRoute} onChange={() => setviewRoute(!viewRoute)}/>
+						Show Route
+					</label>
+				</div>
 				<Data dijkstra_data={dijkstraData} a_star_data={a_starData}></Data>
 				<SideBar viewMarkers={viewMarkers} setviewMarkers={setviewMarkers}></SideBar>
 			</div>

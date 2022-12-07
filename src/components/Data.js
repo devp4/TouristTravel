@@ -2,7 +2,8 @@
 
 const Data = ({ dijkstra_data, a_star_data }) => {
     return (
-        <div>
+        <div id="data" className="data">
+            <img src={require('../assets/dataicon.png')} class="data-icon" alt=""></img>
             <h2>Data</h2>
             <table className='table'>
                 <tbody>
