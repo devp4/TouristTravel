@@ -38,10 +38,10 @@ body {
 }
 
 .options {
-  height: 220px;
-  border-radius: 30px;
+  height: 12vw;
+  border-radius: 22px;
   background-color: rgba(255,255,255,.9);
-  width: 300px;
+  width: 15.5vw;
   padding-bottom: 100px;
   transform: translateX(-120%);
   transition: all 0.3s ease-in-out;
@@ -55,10 +55,10 @@ body {
 
 .data {
   margin-top: 20px;
-  height: 260px;
+  height: 13.5vw;
   border-radius: 30px;
   background-color: rgba(255,255,255,.9);
-  width: 300px;
+  width: 15.5vw;
   transform: translateX(-120%);
   transition: all 0.4s ease-in-out;
   visibility: hidden;
@@ -71,55 +71,13 @@ body {
 
 .features {
   margin-top: 20px;
-  height: 280px;
+  height: 14.5vw;
   border-radius: 30px;
   background-color: rgba(255,255,255,.9);
-  width: 300px;
+  width: 15.5vw;
   position:absolute;
   z-index:401;
   opacity: 1;
-  visibility: hidden;
-  /*transition: opacity 0.3s ease-in;*/
-}
-
-.options {
-  height: 220px;
-  border-radius: 30px;
-  background-color: rgba(255,255,255,.9);
-  width: 300px;
-  padding-bottom: 100px;
-  transform: translateX(-120%);
-  transition: all 0.3s ease-in-out;
-  visibility: hidden;
-}
-
-.options.opened {
-  transform: translateX(0);
-  visibility: visible;
-}
-
-.data {
-  margin-top: 20px;
-  height: 260px;
-  border-radius: 30px;
-  background-color: rgba(255,255,255,.9);
-  width: 300px;
-  transform: translateX(-120%);
-  transition: all 0.4s ease-in-out;
-  visibility: hidden;
-}
-
-.data.opened {
-  transform: translateX(0);
-  visibility: visible;
-}
-
-.features {
-  margin-top: 20px;
-  height: 280px;
-  border-radius: 30px;
-  background-color: rgba(255,255,255,.9);
-  width: 300px;
   transform: translateX(-120%);
   transition: all 0.5s ease-in-out;
   visibility: hidden;
@@ -132,7 +90,7 @@ body {
 
 .container h2 {
   font-weight: bolder;
-  font-size: larger;
+  font-size: 20vh;
 }
 
 .container.opened {
@@ -169,7 +127,7 @@ body {
 
 .features-icon {
   position: absolute;
-  margin-top: 4.7%;
+  margin-top: 5.7%;
   float:left;
   margin-left:4.5%;
   height: 24px;
@@ -185,25 +143,6 @@ body {
   width: 100px;
   height: 30px;
   text-align: center;
-  border: solid black 2px;
-  border-radius: 10px;
-}
-
-.city-dropdown:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.city-dropdown {
-  position:absolute; 
-  z-index:500;
-  right: 0px;
-  margin: 1%;
-  margin-top: 0.5%;
-  width: 100px;
-  height: 30px;
-  text-align: center;
-  border: solid black 2px;
   border-radius: 10px;
 }
 
