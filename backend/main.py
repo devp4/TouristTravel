@@ -1,7 +1,13 @@
 import AdjacencyList
 
-x = AdjacencyList.AdjacencyList()
-x.create_adjacency_list()
-
-ast = x.dijkstra_algorithm(1061531500, 42433550, True, 0.5)
-print(ast)
+# ########################
+#       REFERENCES 
+# 
+# Flask: https://flask.palletsprojects.com/en/2.2.x/
+# OSMnx: https://osmnx.readthedocs.io/en/stable/
+# GeoAPIfy: https://apidocs.geoapify.com/
+# 
+# Dijkstra: Module 8 Lecture Slides
+# A* Search: https://www.redblobgames.com/pathfinding/a-star/introduction.html
+#
+# ########################

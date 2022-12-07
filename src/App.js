@@ -6,6 +6,18 @@ import MarkerPopup from './components/MarkerPopup';
 import SideBar from './components/SideBar';
 import Data from './components/Data';
 
+/* 
+REFERENCES 
+
+React: https://reactjs.org/docs/getting-started.html
+Leaflet: https://leafletjs.com/reference.html
+Tailwind CSS: https://tailwindcss.com/docs/installation
+
+Additional Resources: 
+https://www.w3schools.com/
+
+*/
+
 const App = () => {
 
 	const [markers, setMarkers] = useState({})

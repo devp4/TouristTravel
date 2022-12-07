@@ -1,18 +1,14 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
+### `npm instll`
+Installs required npm packages 
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ## Set up Python Virtual Enviornment and Install Packages
 ```
@@ -20,3 +16,16 @@ cd backend
 python -m venv venv 
 pip install -r requirements.txt (make sure venv is activated)
 ```
+
+## Running 
+When inside backend to start server
+```
+flask run
+```
+
+Once flask terminal displays GRAPHS LOADED run
+```
+npm start
+```
+
+View on [http://localhost:3000](http://localhost:3000)
