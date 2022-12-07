@@ -39,10 +39,12 @@ body {
 }
 
 .options {
-  height: 12vw;
+  /*height: 12vw;*/
+  height: 220px;
   border-radius: 22px;
   background-color: rgba(255,255,255,.9);
-  width: 15.5vw;
+  /*width: 15.5vw;*/
+  width: 280px;
   padding-bottom: 100px;
   transform: translateX(-120%);
   transition: all 0.3s ease-in-out;
@@ -57,10 +59,12 @@ body {
 
 .data {
   margin-top: 20px;
-  height: 13.5vw;
+ /*height: 13.5vw;*/
+  height: 280px;
   border-radius: 30px;
   background-color: rgba(255,255,255,.9);
-  width: 15.5vw;
+  /*width: 15.5vw;*/
+  width: 280px;  
   transform: translateX(-120%);
   transition: all 0.4s ease-in-out;
   visibility: hidden;
@@ -74,10 +78,12 @@ body {
 
 .features {
   margin-top: 20px;
-  height: 14.5vw;
+  height: 270px;
+  /*height: 14.5vw;*/
   border-radius: 30px;
   background-color: rgba(255,255,255,.9);
-  width: 15.5vw;
+  /*width: 15.5vw;*/
+  width: 280px;
   position:absolute;
   z-index:401;
   opacity: 1;
@@ -168,10 +174,11 @@ body {
 .show-route {
   font-size: 15px;
   text-align: left;
+  padding-bottom: 10%;
 }
 
 .option-items {
-  padding-bottom: 10px;
+  margin-bottom: 5%;
   padding-left: 10px;
 }
 
