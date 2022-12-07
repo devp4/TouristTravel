@@ -1,6 +1,7 @@
 import NY_LOC from "./NY_LOC.json"
 import CH_LOC from "./CH_LOC.json"
 import SE_LOC from "./SE_LOC.json"
+import MI_LOC from "./MI_LOC.json"
 
 const cities = {
     "New York": {
@@ -17,6 +18,11 @@ const cities = {
         abrev: "SE",
         locations: SE_LOC,
         coordinates: [47.608013, -122.335167]
+    },
+    "Miami": {
+        abrev: "MI",
+        locations: MI_LOC,  
+        coordinates: [25.761681, -80.191788]
     }
 }
 
