@@ -7,9 +7,6 @@ import SideBar from './components/SideBar';
 import Data from './components/Data';
 
 const App = () => {
-	useEffect(() => {
-		document.title = 'Tourist Travel';
-	}, [])
 
 	const [markers, setMarkers] = useState({})
 	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "museums", "housing", "restaurants"])
