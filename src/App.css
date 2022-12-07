@@ -21,6 +21,7 @@ body {
   border-radius: 20px;
   margin: 1%;
   margin-top: 0.5%;
+  box-shadow: 1px 1px 5px #333, -1px -1px 5px #999;
 }
 
 .container-button:hover {
@@ -46,6 +47,7 @@ body {
   transform: translateX(-120%);
   transition: all 0.3s ease-in-out;
   visibility: hidden;
+  box-shadow: 1px 1px 5px #333, -1px -1px 5px #999;
 }
 
 .options.opened {
@@ -62,6 +64,7 @@ body {
   transform: translateX(-120%);
   transition: all 0.4s ease-in-out;
   visibility: hidden;
+  box-shadow: 1px 1px 5px #333, -1px -1px 5px #999;
 }
 
 .data.opened {
@@ -81,6 +84,7 @@ body {
   transform: translateX(-120%);
   transition: all 0.5s ease-in-out;
   visibility: hidden;
+  box-shadow: 1px 1px 5px #333, -1px -1px 5px #999;
 }
 
 .features.opened {
@@ -144,11 +148,12 @@ body {
   height: 30px;
   text-align: center;
   border-radius: 10px;
+  box-shadow: 1px 1px 5px #333, -1px -1px 5px #999;
 }
 
 .city-dropdown:focus {
   outline: none;
-  box-shadow: none;
+  box-shadow: 1px 1px 5px #333, -1px -1px 5px #999;
 }
 
 .amplifier-value {
