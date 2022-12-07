@@ -7,6 +7,9 @@ import SideBar from './components/SideBar';
 import Data from './components/Data';
 
 const App = () => {
+	useEffect(() => {
+		document.title = 'Tourist Travel';
+	}, [])
 
 	const [markers, setMarkers] = useState({})
 	const [viewMarkers, setviewMarkers] = useState(["tourism", "parks", "entertainment", "museums", "housing", "restaurants"])
@@ -151,9 +154,6 @@ const App = () => {
 	}
 	
 	const toggleContainer = () => {
-		//const container = document.getElementById("container")
-		//container.classList.toggle("opened")
-
 		const options = document.getElementById("options")
 		options.classList.toggle("opened")
 
