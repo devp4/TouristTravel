@@ -29,3 +29,6 @@ npm start
 ```
 
 View on [http://localhost:3000](http://localhost:3000)
+
+# Recommended Settings
+- use fullscreen 1920x1080 window to avoid GUI issues
